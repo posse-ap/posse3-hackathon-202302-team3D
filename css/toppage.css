@@ -54,6 +54,34 @@ button{
   text-align: center;
   margin-right: 16px;
 }
+header{
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 24px 40px;
+  background-color: #eee;
+  position: sticky;
+  box-shadow: 2px 2px 2px 2px #bbb;
+}
+button{
+  display: flex;
+  text-align: center;
+  margin-right: 16px;
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Kosugi Maru', sans-serif;
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+}
+main {
+  background: #D9D9D9;
+}
 
 
 /* links */
@@ -67,10 +95,11 @@ button{
 
 .bottons {
   /*  margin: 30px; */
-text-align: center;
-display: flex;
-/* width: 80%;
- */}
+  text-align: center;
+  display: flex;
+  /* width: 80%;
+ */
+}
 
 @media screen and (max-width: 768px) {
 
@@ -79,20 +108,24 @@ display: flex;
     display: block;
   }
 }
+
 @media screen and (max-width: 768px) {
 
-  .bottons{
+  .bottons {
     display: block;
-    
+
   }
 }
 
+.btn_text::before{
+  font-family: "material-symbols-outlined";
+  content: e5e1;
+}
 
 .btn_01 {
   margin: 0px 30px 20px 30px;
-  background: #7BDCB5;
+  background: #b6c9f3;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  font-family: 'Inter';
   font-style: normal;
   font-weight: 700;
   font-size: 24px;
@@ -102,10 +135,12 @@ display: flex;
   color: #000000;
   padding: 20px;
   white-space: nowrap;
-display: inline-block;
-width: 30%;
+  display: inline-block;
+  width: 30%;
+  border-radius: 20px;
 }
-.btn_01 span{
+
+.btn_01 span {
   display: flex;
   justify-content: center;
 }
@@ -114,9 +149,8 @@ width: 30%;
 @media screen and (max-width: 768px) {
   .btn_01 {
     margin: 0px 30px 20px 30px;
-    background: #7BDCB5;
+    background: #b6c9f3;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    font-family: 'Inter';
     font-style: normal;
     font-weight: 700;
     font-size: 24px;
@@ -128,8 +162,8 @@ width: 30%;
     white-space: nowrap;
     display: block;
     margin-right: auto;
-  margin-left: auto;
-  width:80%;
+    margin-left: auto;
+    width: 80%;
   }
 }
 
@@ -247,7 +281,6 @@ p {
 
   text-align: center;
   padding: 20px;
-  font-family: 'Inter';
   font-style: normal;
   font-weight: 700;
   font-size: 24px;
@@ -257,8 +290,9 @@ p {
 }
 
 h2 span {
-  background-color: #ffffff;
+  background-color: #deeafc;
   padding: 20px;
+  border-radius: 20px;
 }
 
 ul {
@@ -300,9 +334,9 @@ a:active {
 
 @media screen and (max-width: 768px) {
 
-  .cp_container{
+  .cp_container {
     display: block;
-    
+
   }
 }
 
@@ -323,10 +357,10 @@ a:active {
 
 .intro_contents {
   padding: 5%;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
 }
 
-.club_2 table{
+.club_2 table {
   border-spacing: 10px;
 }
 
@@ -364,13 +398,12 @@ a:active {
   bottom: 20px;
   left: 50%;
   width: 16rem;
-  font-family: FontAwesome;
   content: ' 続きをよむ';
   transform: translate(-50%, 0);
   letter-spacing: 0.05em;
   color: #ffffff;
   border-radius: 20px;
-  background-color: #D9D9D9;
+  background-color: #b6c9f3;
 }
 
 .cp_box input {
@@ -385,11 +418,10 @@ a:active {
 }
 
 /* .cp_box input:checked+label {
-  /* display: none ; 閉じるボタンを消す場合解放 
+  /* display: none ; 閉じるボタンを消す場合解放
  } */
 
 .cp_box input:checked+label:after {
-  font-family: FontAwesome;
   content: ' 閉じる';
 }
 
@@ -398,4 +430,12 @@ a:active {
   padding-bottom: 80px;
   /* 閉じるボタンのbottomからの位置 */
   transition: all 0.5s;
+}
+
+footer p{
+  font-weight: thin;
+  font-size: 16px;
+}
+.copyright{
+  margin-top: 120px;
 }

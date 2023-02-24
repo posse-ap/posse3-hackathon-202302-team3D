@@ -1,3 +1,10 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Kosugi Maru', sans-serif;
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+}
+
 body,
 html {
   margin: 0;
@@ -27,6 +34,86 @@ h2 span {
   white-space: nowrap;
 }
 
+/*ヘッダー適応のcss*/
+.logo{
+  margin-top: 24px;
+  margin-left: 24px;
+  margin-bottom: 40px;
+}
+.status-logo{
+  width: 40px;
+  background-color: #7BDCB5;
+}
+.status {
+  display: block;
+  width: 100%;
+  /* アイコンのスペースを確保したpadding-leftを設定する*/
+  padding: 0px 16px 0px 40px;
+  background-color: #B8D4D1;
+  /* 左から16pxの上下中央に背景画像を配置*/
+  background-position: left 16px center;
+  background-repeat: no-repeat;
+  background-size: 32px 32px;
+  /* 折り返しの対応*/
+  overflow-wrap: break-word;
+  background-image: url(/img/conditions_FILL0_wght400_GRAD0_opsz48.png);
+  border-radius: 8%;
+  box-shadow: 2px 2px 2px 2px #bbb;
+}
+span{
+  font-size: 32px;
+}
+.head{
+  display: flex;
+  align-items: center;
+  justify-content: space-between
+}
+/* .header{
+  height: 240px;
+  display: flex;
+  justify-content: center;
+} */
+header{
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 24px 40px;
+  background-color: #eee;
+  position: sticky;
+  box-shadow: 2px 2px 2px 2px #bbb;
+}
+button{
+  display: flex;
+  text-align: center;
+  margin-right: 60px;
+  border: none;
+}
+h2,
+p {
+  text-align: center;
+  padding: 20px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+/* フッター */
+footer p{
+  font-weight: thin;
+  font-size: 16px;
+}
+.copyright{
+  margin-top: 120px;
+}
+
+
 
 /* アンケートのタイトルカード作成 */
 .survey_header {
@@ -54,12 +141,12 @@ h2 span {
 }
 
 .survey_title_icon {
-  background: #ccc;
+  background: #b6c9f3;
   width: 30%;
 }
 
 .survey_title_content {
-  background: #fff;
+  background: #ffffff;
   padding: 24px;
   width: 100%;
 }
@@ -91,7 +178,7 @@ h2 span {
 }
 
 .survey_label {
-  background: #ccc;
+  background: #b6c9f3;
   width: 30%;
   display: flex;
   justify-content: center;
@@ -124,7 +211,7 @@ h2 span {
 
 .submit {
   min-width: 200px;
-  border: 1px solid #ccc;
+  border: 1px solid #025d8e;
   border-radius: 50px;
   padding: 10px;
   box-shadow: 2px 5px 15px -7px rgba(0, 0, 0, 0.6);
@@ -173,7 +260,6 @@ ul.ks-cboxtags li label::before {
   font-variant: normal;
   text-rendering: auto;
   -webkit-font-smoothing: antialiased;
-  font-family: "Font Awesome 5 Free";
   font-weight: 900;
   font-size: 12px;
   padding: 2px 6px 2px 2px;
@@ -197,9 +283,9 @@ ul.ks-cboxtags li input[type="checkbox"]:checked+label::before {
 }
 
 ul.ks-cboxtags li input[type="checkbox"]:checked+label {
-  border: 2px solid #1bdbf8;
-  background-color: #12bbd4;
-  color: #fff;
+  border: 2px solid #025d8e;
+  background-color: #deeafc;
+  color: #025d8e;
   transition: all .2s;
 }
 
@@ -213,7 +299,7 @@ ul.ks-cboxtags li input[type="checkbox"] {
 }
 
 ul.ks-cboxtags li input[type="checkbox"]:focus+label {
-  border: 2px solid #e9a1ff;
+  border: 2px solid #025d8e;
 }
 
 /* モーダル作成 */
@@ -237,7 +323,7 @@ ul.ks-cboxtags li input[type="checkbox"]:focus+label {
 .modal_content {
   height: 60%;
   width: 60%;
-  background: #e9a1ff;
+  background: #deeafc;
   position: relative;
   padding: 30px;
   border-radius: 20px;
