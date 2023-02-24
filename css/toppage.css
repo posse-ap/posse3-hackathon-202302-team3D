@@ -95,15 +95,9 @@ main {
   .bottons a {
     display: block;
   }
+
 }
 
-@media screen and (max-width: 768px) {
-
-  .bottons {
-    display: block;
-
-  }
-}
 
 .btn_text::before{
   font-family: "material-symbols-outlined";
