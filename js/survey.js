@@ -68,6 +68,8 @@
         console.log(chk2[i].value)
       };
     };
+
+    //値を取得してHTMLページに反映（日向）
     console.log(items)
     console.log(arr)
     info.filter(list => {
