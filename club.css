@@ -38,61 +38,105 @@
     background-color: #d9d9d9;
     width: 100%;
 }
+.club_itiran {
+    background-color: #7BDCB5;
+    width: 13%;
+    border-radius: 20px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin-left: 35%;
+}
+.itiran {
+    font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 20px;
+line-height: 29px;
+display: flex;
+align-items: center;
+text-align: center;
+padding: 10%;
+padding-left: 25%;
+}
 
 /*バスケ*/
 .pro {
     background-color: #fff;
+    width: 880px;
+    /* height: 320px; */
+    padding: 20px;
 }
 section {
     width: 100%;
     display: flex;
     justify-content: center;
-    background-color: aqua;
+    margin-top: 5%;
 }
 .club_basket {
-    width: 60%;
+    width: 40%;
     /* height: 320px; */
     left: 26px;
     top: 39px;
     display: flex;
+
 }
 
 .club_img {
     background-color: #EDEDED;
+    width: 320px;
 }
 
 .club_1 {
-    display: flex;
+    display: flex;  
+    gap: 150px;
+}
+.club_2 {
+    font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 15px;
+line-height: 29px;
+display: flex;
+align-items: center;
+text-align: center;
+padding-left: 80px;
+padding-top: 20px;
+padding-bottom: 20px;
 }
 .de {
     font-family: 'Inter';
 font-style: normal;
 font-weight: 700;
-font-size: 24px;
-line-height: 29px;
+font-size: 15px;
+line-height: 20px;
 align-items: center;
 }
 .name {
     font-family: 'Inter';
 font-style: normal;
 font-weight: 700;
-font-size: 24px;
+font-size: 15px;
 line-height: 29px;
 display: flex;
 align-items: center;
 text-align: center;
+padding-left: 40px;
 }
 
+
 .club_button{
-    font-family: 'Inter';
+font-family: 'Inter';
 font-style: normal;
 font-weight: 700;
-font-size: 16px;
+font-size: 13px;
 line-height: 19px;
 display: flex;
+padding: 5%;
+background-color: #d9d9d9;
+width: 40%;
+justify-content: center;
+border-radius: 30px;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 align-items: center;
-text-align: center;
-padding-left: 25%;
 }
 
 /*自炊*/
