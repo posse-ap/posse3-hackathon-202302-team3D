@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,8 +8,10 @@
   <title>アンケート</title>
   <link rel="stylesheet" href="./css/common.css">
   <link rel="stylesheet" href="./css/survey.css">
-  <script src="./js/script.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="./js/script.js" defer></script>
 </head>
+
 <body>
   <header class="header"></header>
   <main class="main">
@@ -33,7 +36,7 @@
             <li><input type="checkbox" id="movie" value="映画"><label for="movie">映画</label></li>
             <li><input type="checkbox" id="food" value="料理"><label for="food">料理</label></li>
             <li><input type="checkbox" id="exercise" value="運動"><label for="exercise">運動</label></li>
-        </ul>
+          </ul>
         </div>
         <div class="survey_timing">
           <label for="timing">朝派？夜派？：</label>
@@ -53,12 +56,25 @@
             <li><input type="checkbox" id="tennis" value="テニス"><label for="tennis">料理</label></li>
             <li><input type="checkbox" id="snowboard" value="スノボ"><label for="exercise">スノボ</label></li>
             <li><input type="checkbox" id="basketball" value="スノボ"><label for="basketball">バスケ</label></li>
-        </ul>
+          </ul>
         </div>
-        <input type="submit" value="回答">
+        <input type="submit" id="submit" value="回答">
       </form>
     </section>
+    <div class="modal">
+      <div class="modal_wrapper">
+        <div class="modal_content modal_loading">
+          <div class="modal_close"></div>
+          <div class="modal_result">
+            <p>あなたにおすすめのPOSSE部活は...</p>
+            <p class="modal_result_content"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
   </main>
   <footer class="footer"></footer>
 </body>
+
 </html>
