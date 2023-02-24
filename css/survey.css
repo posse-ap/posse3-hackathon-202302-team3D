@@ -272,9 +272,9 @@ ul.ks-cboxtags li label::before {
 }
 
 ul.ks-cboxtags li input[type="checkbox"]:checked+label::before {
-  content: url("../img/check_v.png");
-  /* content: ""; */
-  /* background: url("../img/check_v.png") no-repeat; */
+  /* content: url("../img/check_v.png"); */
+  content: "";
+  background: url("../img/check_v.png") no-repeat;
   background-size: contain;
   width: 14px;
   height: 8px;
@@ -354,6 +354,12 @@ ul.ks-cboxtags li input[type="checkbox"]:focus+label {
   background: #666;
   /* バツ印の色 */
   border-radius: 2px;
+}
+
+.modal_result_content {
+  font-family: 'Microsoft YaHei', "Helvetica Neue", Helvetica, STHeiTi, Arial, sans-serif;
+  font-size: 50px;
+  color:#4169e1;
 }
 
 .modal_close::before {
