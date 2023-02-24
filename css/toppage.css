@@ -26,8 +26,9 @@ main {
 .bottons {
   /*  margin: 30px; */
 text-align: center;
-
-}
+display: flex;
+/* width: 80%;
+ */}
 
 @media screen and (max-width: 768px) {
 
@@ -36,6 +37,14 @@ text-align: center;
     display: block;
   }
 }
+@media screen and (max-width: 768px) {
+
+  .bottons{
+    display: block;
+    
+  }
+}
+
 
 .btn_01 {
   margin: 0px 30px 20px 30px;
@@ -51,8 +60,36 @@ text-align: center;
   color: #000000;
   padding: 20px;
   white-space: nowrap;
+display: inline-block;
+width: 30%;
+}
+.btn_01 span{
+  display: flex;
+  justify-content: center;
 }
 
+
+@media screen and (max-width: 768px) {
+  .btn_01 {
+    margin: 0px 30px 20px 30px;
+    background: #7BDCB5;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    /* line-height: 29px;*/
+    /* align-items: center; */
+    text-align: center;
+    color: #000000;
+    padding: 20px;
+    white-space: nowrap;
+    display: block;
+    margin-right: auto;
+  margin-left: auto;
+  width:80%;
+  }
+}
 
 
 /* recent photos */
@@ -219,6 +256,13 @@ a:active {
 
 }
 
+@media screen and (max-width: 768px) {
+
+  .cp_container{
+    display: block;
+    
+  }
+}
 
 
 
