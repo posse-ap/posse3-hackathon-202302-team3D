@@ -142,7 +142,6 @@ a p {
     /* line-height: 29px;*/
     /* align-items: center; */
     text-align: center;
-    color: #000000;
     padding: 20px;
     white-space: nowrap;
     display: block;
@@ -341,7 +340,7 @@ a:active {
   width: fit-content;
   display: flex;
   align-items: center;
-  background: #EDEDED;
+  background: bisque;
 }
 
 .club_intro {
@@ -426,7 +425,7 @@ a:active {
 
 .cp_box input:checked~.cp_container {
   height: auto;
-  padding-bottom: 80px;
+  margin-bottom: 80px;
   /* 閉じるボタンのbottomからの位置 */
   transition: all 0.5s;
 }

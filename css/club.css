@@ -375,7 +375,7 @@ section {
 footer{
     display: flex;
     justify-content: center;
-    background-color: #ffffff;
+    background-color: #FCFFE7;
 }
 
 .go-top{
@@ -384,7 +384,7 @@ footer{
     margin-top: 25px;
     padding: 4px 24px;
     border-radius: 20px;
-    background-color: #FCFFE7;
+    background-color: #BAD7E9;
     border: none;
     color: white;
     box-shadow: 1px 1px 1px 1px#bbb;

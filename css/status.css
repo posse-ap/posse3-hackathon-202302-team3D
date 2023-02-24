@@ -105,10 +105,6 @@ footer p {
 
 .status_title {
   text-align: center;
-  font-size: 60px;
-}
-
-.status_title {
   position: relative;
   padding: 0.8rem 0;
   margin-bottom: 0.2rem;
@@ -116,6 +112,13 @@ footer p {
   font-weight: bold;
   font-size: 50px;
 }
+
+@media screen and (max-width:768px){
+  .status_title{
+    font-size: 30px;
+  }
+}
+
 
 
 .status_title:before {
@@ -131,6 +134,8 @@ footer p {
 .status_wrapper {
   margin-top: 70px;
 }
+
+
 
 .status_3_0 {}
 
@@ -175,6 +180,7 @@ footer p {
   border-radius: 5px;
   padding: 1rem;
   cursor: pointer;
+  white-space: nowrap;
   /* padding-top: calc((100%-64px)/4); */
   /* width: calc((100%-64px)/3); */
   /* transition: transform 300ms ease; */
@@ -200,3 +206,9 @@ footer p {
 }
 
 .status_3_5 {}
+
+.top{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
