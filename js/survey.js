@@ -24,6 +24,8 @@ document.querySelector('#submit').addEventListener('click', () => {
   Array.prototype.forEach.call(formElements.checkbox, function (checkbox) {
     if(checkbox.checked === true){
       console.log('Checkbox: ', checkbox.value);
+      // aaa(朝型);
+      // aaa(checkbox.value);
     }
   });
 });
@@ -45,3 +47,53 @@ modalOpen.addEventListener('click', e => {
 
 }
 }
+
+//モーダル回答（ひなた）
+
+// let clubimages = [
+//   "バスケ部",
+//   "朝活部",
+//   "自炊部",
+//   "ラーメン部"
+// ];
+
+// switch (clubimages){
+//   case "バスケ":
+//     console.log('バスケ部');
+//     break;
+//   case "料理":
+//     console.log('自炊部');
+//     break;
+//   case "朝":
+//     console.log('朝活部');
+//     break;
+//   case "映画":
+//       console.log('映画部');
+//       break;
+// }
+
+let array =[
+  {
+    name : "バスケ部",
+    item : [
+      "運動",
+      "バスケ"
+    ]
+  },
+{
+  name : "朝活",
+  item : ["朝型"]
+}
+];
+const  aaa = item => {
+  array.filter (arr =>{
+    return arr.item == item
+  })
+}
+const club = array.filter (arr =>{
+  return arr.item == "朝型"
+});
+
+// console.log (club);
+// console.log (club[0]);
+// console.log (club[0].name);
