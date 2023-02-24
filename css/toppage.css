@@ -99,7 +99,7 @@ main {
 
 
 .btn_text::before{
-  font-family: "material-symbols-outlined";
+  /* font-family: "material-symbols-outlined"; */
   content: e5e1;
 }
 
