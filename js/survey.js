@@ -21,14 +21,27 @@ document.querySelector('#submit').addEventListener('click', () => {
 
 
  //趣味
-  Array.prototype.forEach.call(formElements.checkbox, function (checkbox) {
-    if(checkbox.checked === true){
-      console.log('Checkbox: ', checkbox.value);
-      // aaa(朝型);
-      // aaa(checkbox.value);
-    }
-  });
-});
+
+  const arr = [];
+  const chk1 = document.getElementsByName("chk1");
+
+  for (let i = 0; i < chk1.length; i++) {
+    if (chk1[i].checked) {//(chk1[i].checked === true)と同じ
+      arr.push(chk1[i].value);
+      console.log(chk1[i].value)
+    };
+  };
+//スポーツ
+  const rarr = [];
+  const chk2 = document.getElementsByName("chk2");
+
+  for (let i = 0; i < chk2.length; i++) {
+    if (chk2[i].checked) {//(chk2[i].checked === true)と同じ
+      rarr.push(chk2[i].value);
+      console.log(chk2[i].value)
+    };
+  };
+
 {
 //モーダルを作る（咲乃）
 const modal = document.querySelector(".modal_wrapper");
