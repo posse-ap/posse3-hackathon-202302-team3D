@@ -47,7 +47,7 @@ const modal = document.querySelector(".modal_wrapper");
 
 const modalOpen = document.getElementById("submit");
 modalOpen.addEventListener('click', e => {
-  e.preventDefault();
+  // e.preventDefault();
 
   modal.style.display = 'flex';
 })
