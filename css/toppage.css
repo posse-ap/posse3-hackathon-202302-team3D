@@ -21,7 +21,7 @@
   /* 折り返しの対応*/
   overflow-wrap: break-word;
   background-image: url(/img/conditions_FILL0_wght400_GRAD0_opsz48.png);
-  border-radius: 8%;
+  border-radius: 20px;
   box-shadow: 2px 2px 2px 2px #bbb;
 }
 span{
@@ -44,7 +44,6 @@ header{
   left: 0;
   width: 100%;
   box-sizing: border-box;
-  padding: 24px 40px;
   background-color: #eee;
   position: sticky;
   box-shadow: 2px 2px 2px 2px #bbb;
@@ -53,6 +52,10 @@ button{
   display: flex;
   text-align: center;
   margin-right: 16px;
+}
+a p{
+  margin-top: 16px;
+  margin-bottom: 16px;
 }
 
 
@@ -417,7 +420,8 @@ a:active {
 footer p{
   font-weight: thin;
   font-size: 16px;
+  margin-bottom: 16px;
 }
 .copyright{
-  margin-top: 120px;
+  margin-top: 16px;
 }
