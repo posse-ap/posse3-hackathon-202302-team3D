@@ -1,0 +1,292 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  background-color: #F5F5F5;
+
+}
+
+/* links */
+
+.links {
+  padding-top: 50px;
+  padding-bottom: 40px;
+  width: 100%;
+
+}
+
+.bottons {
+  /*  margin: 30px; */
+text-align: center;
+
+}
+
+@media screen and (max-width: 768px) {
+
+  .bottons,
+  .bottons a {
+    display: block;
+  }
+}
+
+.btn_01 {
+  margin: 0px 30px 20px 30px;
+  background: #FFFFFF;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  /* line-height: 29px;*/
+  /* align-items: center; */
+  text-align: center;
+  color: #000000;
+  padding: 20px;
+  white-space: nowrap;
+}
+
+
+
+/* recent photos */
+
+/*==================================================
+スライダーのためのcss
+===================================*/
+
+.recent {
+  width: 100%;
+}
+
+.slider {
+  /*横幅94%で左右に余白を持たせて中央寄せ*/
+  width: 94%;
+  margin: 0 auto;
+}
+
+.slider img {
+  /*   width: 100%;
+ */
+  /*スライダー内の画像を横幅100%に*/
+  /*   height: auto;
+ */
+  width: 400px;
+  height: 240px;
+  object-fit: cover;
+  /* padding: 0 10px 0 10px; */
+}
+
+/*slickのJSで書かれるタグ内、スライド左右の余白調整*/
+
+.slider .slick-slide {
+  margin: 20px 0px;
+}
+
+/* .slider .slide{
+  margin: 10px;
+} */
+
+/*矢印の設定*/
+
+/*戻る、次へ矢印の位置*/
+.slick-prev,
+.slick-next {
+  position: absolute;
+  /*絶対配置にする*/
+  top: 42%;
+  cursor: pointer;
+  /*マウスカーソルを指マークに*/
+  outline: none;
+  /*クリックをしたら出てくる枠線を消す*/
+  border-top: 2px solid #666;
+  /*矢印の色*/
+  border-right: 2px solid #666;
+  /*矢印の色*/
+  height: 15px;
+  width: 15px;
+}
+
+.slick-prev {
+  /*戻る矢印の位置と形状*/
+  left: -1.5%;
+  transform: rotate(-135deg);
+}
+
+.slick-next {
+  /*次へ矢印の位置と形状*/
+  right: -1.5%;
+  transform: rotate(45deg);
+}
+
+/*ドットナビゲーションの設定*/
+
+.slick-dots {
+  text-align: center;
+  margin: 20px 0 0 0;
+}
+
+.slick-dots li {
+  display: inline-block;
+  margin: 0 5px;
+}
+
+.slick-dots button {
+  color: transparent;
+  outline: none;
+  width: 8px;
+  /*ドットボタンのサイズ*/
+  height: 8px;
+  /*ドットボタンのサイズ*/
+  display: block;
+  border-radius: 50%;
+  background: #ccc;
+  /*ドットボタンの色*/
+}
+
+.slick-dots .slick-active button {
+  background: #333;
+  /*ドットボタンの現在地表示の色*/
+}
+
+
+/*========= レイアウトのためのCSS ===============*/
+
+body {
+  background: #eee;
+}
+
+h2,
+p {
+
+  text-align: center;
+  padding: 20px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+h2 span {
+  background-color: #ffffff;
+  padding: 20px;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  color: #333;
+  text-decoration: none;
+}
+
+a:hover,
+a:active {
+  text-decoration: none;
+}
+
+/* preview */
+.cp_box *,
+.cp_box *:before,
+.cp_box *:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.cp_box {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.cp_container {
+  display: flex;
+  width: 60%;
+
+}
+
+.club_photo {
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  background: #EDEDED;
+}
+
+.cp_container img {
+  width: 100%;
+  justify-content: center;
+  height: auto;
+}
+
+.intro_contents {
+  padding: 5%;
+  background-color: #FFFFFF;
+}
+
+.cp_box label {
+  position: absolute;
+  z-index: 1;
+  bottom: 0;
+  width: 100%;
+  height: 140px;
+  /* グラデーションの高さ */
+  cursor: pointer;
+  text-align: center;
+  /* 以下グラデーションは背景を自身のサイトに合わせて設定してください */
+  background: linear-gradient(to bottom, rgba(250, 252, 252, 0) 0%, rgba(250, 252, 252, 0.95) 90%);
+}
+
+.cp_box input:checked+label {
+  background: inherit;
+  /* 開いた時にグラデーションを消す */
+}
+
+.cp_box label:after {
+  line-height: 2.5rem;
+  position: absolute;
+  z-index: 2;
+  bottom: 20px;
+  left: 50%;
+  width: 16rem;
+  font-family: FontAwesome;
+  content: ' 続きをよむ';
+  transform: translate(-50%, 0);
+  letter-spacing: 0.05em;
+  color: #ffffff;
+  border-radius: 20px;
+  background-color: #D9D9D9;
+}
+
+.cp_box input {
+  display: none;
+}
+
+.cp_box .cp_container {
+  overflow: hidden;
+  height: 250px;
+  /* 開く前に見えている部分の高さ */
+  transition: all 0.5s;
+}
+
+/* .cp_box input:checked+label {
+  /* display: none ; 閉じるボタンを消す場合解放 
+ } */
+
+.cp_box input:checked+label:after {
+  font-family: FontAwesome;
+  content: ' 閉じる';
+}
+
+.cp_box input:checked~.cp_container {
+  height: auto;
+  padding-bottom: 80px;
+  /* 閉じるボタンのbottomからの位置 */
+  transition: all 0.5s;
+}
