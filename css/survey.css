@@ -22,8 +22,9 @@ h2:before {
 
 h2 span {
   position: relative;
-  padding: 0 1em;
+  padding: 0px 1em;
   background: #f9f9f9;
+  white-space: nowrap;
 }
 
 
@@ -275,4 +276,10 @@ ul.ks-cboxtags li input[type="checkbox"]:focus+label {
 
 .modal_close::after {
   transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+@media (max-width: 768px) {
+  .survey_item input {
+    width: 50%;
+  }
 }
