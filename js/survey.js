@@ -1,6 +1,21 @@
 'use strict';
 
 {
+  let info = [
+    {
+      name: "バスケ部",
+      item: [
+        "運動",
+        "バスケ"
+      ]
+    },
+    {
+      name: "朝活",
+      item: ["朝型"]
+    }
+  ];
+
+
   //フォームの内容をとってくる（たつ）
   document.querySelector('#submit').addEventListener('click', () => {
     const element = document.forms.survey;
@@ -30,12 +45,11 @@
         arr.push(chk1[i].value);
         console.log(chk1[i].value)
         let club = info.filter(arr => {
-          arr.item == "朝型";
-          console.log(arr.item)
+          return arr.item == chk1[i].value;
+          // console.log(arr.item)
           // arr.item.forEach(e => {
           //   console.log(e == chk1[i].value);
           })
-        
         console.log(club)
         // let a = aaa(chk1[i].value)
         // console.log (aaa(chk1[i].value));
@@ -53,6 +67,7 @@
     };
   });
 
+  
 
     {
       //モーダルを作る（咲乃）
@@ -97,19 +112,19 @@
     //       break;
     // }
 
-    let info = [
-      {
-        name: "バスケ部",
-        item: [
-          "運動",
-          "バスケ"
-        ]
-      },
-      {
-        name: "朝活",
-        item: ["朝型"]
-      }
-    ];
+    // let info = [
+    //   {
+    //     name: "バスケ部",
+    //     item: [
+    //       "運動",
+    //       "バスケ"
+    //     ]
+    //   },
+    //   {
+    //     name: "朝活",
+    //     item: ["朝型"]
+    //   }
+    // ];
     const aaa = item => {
       info.filter(arr => {
         console.log(item)
