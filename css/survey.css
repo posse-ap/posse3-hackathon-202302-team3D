@@ -9,6 +9,7 @@ body,
 html {
   margin: 0;
   padding: 0;
+  background: #FCFFE7;
 }
 
 h2 {
@@ -30,7 +31,7 @@ h2:before {
 h2 span {
   position: relative;
   padding: 0px 1em;
-  background: #f9f9f9;
+  background: #FCFFE7;
   white-space: nowrap;
 }
 
@@ -85,7 +86,7 @@ header {
   width: 100%;
   box-sizing: border-box;
   /* padding: 24px 40px; */
-  background-color: #c5c6c7;
+  background-color: #fff;
   position: sticky;
   box-shadow: 2px 2px 2px 2px #bbb;
 }
@@ -98,7 +99,7 @@ button {
 }
 
 nav {
-  background: #c5c6c7;
+  background: #fff;
 }
 
 h2,
@@ -150,7 +151,7 @@ footer p {
 }
 
 .survey_title_icon {
-  background: #b39bc8;
+  background: #BAD7E9;
   width: 30%;
 }
 
@@ -202,7 +203,7 @@ footer p {
 }
 
 .survey_label {
-  background: #b39bc8;
+  background: #BAD7E9;
   width: 30%;
   display: flex;
   justify-content: center;
@@ -239,9 +240,10 @@ footer p {
 .submit {
   font-size: 20px;
   min-width: 200px;
-  border: 1px solid #FEF9C7;
-  background: #FEF9C7;
+  border: 1px solid #2B3467;
+  background: #2B3467;
   border-radius: 50px;
+  color: white;
   padding: 10px;
   box-shadow: 2px 5px 15px -7px rgba(0, 0, 0, 0.6);
 }
@@ -312,9 +314,9 @@ ul.ks-cboxtags li input[type="checkbox"]:checked+label::before {
 }
 
 ul.ks-cboxtags li input[type="checkbox"]:checked+label {
-  border: 2px solid #FCE181;
-  background-color: #FCE181;
-  color: #ab8a14;
+  border: 2px solid #e46579;
+  background-color: #fb8195;
+  color: #fff;
   transition: all .2s;
 }
 
