@@ -60,8 +60,8 @@ text-align: center;
 }
 
 .slider {
-  /*横幅94%で左右に余白を持たせて中央寄せ*/
-  width: 94%;
+  /*横幅85%で左右に余白を持たせて中央寄せ*/
+  width: 85%;
   margin: 0 auto;
 }
 
@@ -150,6 +150,7 @@ text-align: center;
 }
 
 
+
 /*========= レイアウトのためのCSS ===============*/
 
 body {
@@ -208,9 +209,12 @@ a:active {
 
 .cp_container {
   display: flex;
-  width: 60%;
+  width: 85%;
 
 }
+
+
+
 
 .club_photo {
   width: fit-content;
@@ -230,6 +234,19 @@ a:active {
   background-color: #FFFFFF;
 }
 
+.club_2 table{
+  border-spacing: 10px;
+}
+
+/* .club_1{
+  display: flex;
+}
+
+@media screen and (max-width: 768px) {
+  .club_1{
+    display: block;
+  }
+  } */
 .cp_box label {
   position: absolute;
   z-index: 1;
