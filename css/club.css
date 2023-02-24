@@ -20,7 +20,6 @@
 
 .status {
     display: block;
-    width: 100%;
     /* アイコンのスペースを確保したpadding-leftを設定する*/
     padding: 0px 16px 0px 40px;
     background-color: #B8D4D1;
@@ -67,11 +66,18 @@ button {
     display: flex;
     text-align: center;
     margin-right: 16px;
+    border: none;
 }
 
 a p {
     margin-top: 16px;
     margin-bottom: 16px;
+    text-align: center;
+    padding: 20px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
 }
 
 
