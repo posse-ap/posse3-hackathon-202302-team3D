@@ -35,15 +35,17 @@ h2 span {
 }
 
 /*ヘッダー適応のcss*/
-.logo{
+.logo {
   margin-top: 24px;
   margin-left: 24px;
   margin-bottom: 40px;
 }
-.status-logo{
+
+.status-logo {
   width: 40px;
   background-color: #7BDCB5;
 }
+
 .status {
   display: block;
   width: 100%;
@@ -60,20 +62,23 @@ h2 span {
   border-radius: 8%;
   box-shadow: 2px 2px 2px 2px #bbb;
 }
-span{
+
+span {
   font-size: 32px;
 }
-.head{
+
+.head {
   display: flex;
   align-items: center;
   justify-content: space-between
 }
+
 /* .header{
   height: 240px;
   display: flex;
   justify-content: center;
 } */
-header{
+header {
   position: fixed;
   z-index: 999;
   top: 0;
@@ -81,19 +86,22 @@ header{
   width: 100%;
   box-sizing: border-box;
   padding: 24px 40px;
-  background-color: #bbb3a5;
+  background-color: #c5c6c7;
   position: sticky;
   box-shadow: 2px 2px 2px 2px #bbb;
 }
-button{
+
+button {
   display: flex;
   text-align: center;
   margin-right: 60px;
   border: none;
 }
+
 nav {
-  background: #bbb3a5;
+  background: #c5c6c7;
 }
+
 h2,
 p {
   text-align: center;
@@ -107,11 +115,12 @@ p {
 }
 
 /* フッター */
-footer p{
+footer p {
   font-weight: thin;
   font-size: 16px;
 }
-.copyright{
+
+.copyright {
   margin-top: 120px;
 }
 
@@ -143,7 +152,7 @@ footer p{
 }
 
 .survey_title_icon {
-  background: #9FEDD7;
+  background: #b39bc8;
   width: 30%;
 }
 
@@ -185,12 +194,17 @@ footer p{
   border-radius: 20px;
 }
 
+/* .survey_box label {
+  font-size: 20px;
+  font-weight: bold;
+} */
+
 .survey_box {
   display: flex;
 }
 
 .survey_label {
-  background: #9FEDD7;
+  background: #b39bc8;
   width: 30%;
   display: flex;
   justify-content: center;
@@ -198,6 +212,7 @@ footer p{
   padding: 14px;
   text-align: center;
   box-sizing: border-box;
+  font-size: 20px;
 }
 
 .survey_item {
@@ -223,7 +238,8 @@ footer p{
 
 .submit {
   min-width: 200px;
-  border: 1px solid #025d8e;
+  border: 1px solid #FEF9C7;
+  background: #FEF9C7;
   border-radius: 50px;
   padding: 10px;
   box-shadow: 2px 5px 15px -7px rgba(0, 0, 0, 0.6);
@@ -295,9 +311,9 @@ ul.ks-cboxtags li input[type="checkbox"]:checked+label::before {
 }
 
 ul.ks-cboxtags li input[type="checkbox"]:checked+label {
-  border: 2px solid #025d8e;
-  background-color: #F7F9FB;
-  color: #025d8e;
+  border: 2px solid #FCE181;
+  background-color: #FCE181;
+  color: #ab8a14;
   transition: all .2s;
 }
 
@@ -311,7 +327,7 @@ ul.ks-cboxtags li input[type="checkbox"] {
 }
 
 ul.ks-cboxtags li input[type="checkbox"]:focus+label {
-  border: 2px solid #025d8e;
+  border: 2px solid #FCE181;
 }
 
 /* モーダル作成 */
