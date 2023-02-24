@@ -117,6 +117,9 @@ p {
 footer p {
   font-weight: thin;
   font-size: 16px;
+  margin-bottom: 16px;
+    font-style: normal;
+    font-weight: 700;
 }
 
 /* .copyright {
@@ -430,17 +433,29 @@ ul.ks-cboxtags li input[type="checkbox"]:focus+label {
   margin-right: 16px;
   box-shadow: 1px 1px 1px 1px#bbb;
 }
+
+.go-top{
+
+}
+
+.button_top{
+  display: flex;
+  justify-content: center;
+}
+
+.button_top p{
+  line-height: 29px;
+}
+
 .go-top a{
   color: white;
 }
-footer p{
-  font-weight: thin;
-  font-size: 16px;
-  margin-bottom: 16px;
+.footer{
+  background: #FCFFE7;
 }
 .copyright{
   display: inline;
   display: flex;
   justify-content: center;
-  margin-top: 16px;
+ /*  margin-top: 16px; */
 }
