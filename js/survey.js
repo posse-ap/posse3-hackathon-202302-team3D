@@ -21,6 +21,7 @@ document.querySelector('#submit').addEventListener('click', () => {
 
 
  //趣味
+
   const arr = [];
   const chk1 = document.getElementsByName("chk1");
 
@@ -40,7 +41,7 @@ document.querySelector('#submit').addEventListener('click', () => {
       console.log(chk2[i].value)
     };
   };
-});
+
 {
 //モーダルを作る（咲乃）
 const modal = document.querySelector(".modal_wrapper");
@@ -58,4 +59,54 @@ modalOpen.addEventListener('click', e => {
 
 
 }
+
+
+//モーダル回答（ひなた）
+
+// let clubimages = [
+//   "バスケ部",
+//   "朝活部",
+//   "自炊部",
+//   "ラーメン部"
+// ];
+
+// switch (clubimages){
+//   case "バスケ":
+//     console.log('バスケ部');
+//     break;
+//   case "料理":
+//     console.log('自炊部');
+//     break;
+//   case "朝":
+//     console.log('朝活部');
+//     break;
+//   case "映画":
+//       console.log('映画部');
+//       break;
+// }
+
+let info =[
+  {
+    name : "バスケ部",
+    item : [
+      "運動",
+      "バスケ"
+    ]
+  },
+{
+  name : "朝活",
+  item : ["朝型"]
 }
+];
+const  aaa = item => {
+  info.filter (arr =>{
+    return arr.item == item
+  })
+}
+const club = array.filter (arr =>{
+  return arr.item == "朝型"
+});
+
+// console.log (club);
+// console.log (club[0]);
+// console.log (club[0].name);
