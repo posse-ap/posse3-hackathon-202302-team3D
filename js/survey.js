@@ -59,7 +59,7 @@ modalOpen.addEventListener('click', e => {
 
 
 }
-}
+
 
 //モーダル回答（ひなた）
 
@@ -85,7 +85,7 @@ modalOpen.addEventListener('click', e => {
 //       break;
 // }
 
-let array =[
+let info =[
   {
     name : "バスケ部",
     item : [
@@ -99,7 +99,7 @@ let array =[
 }
 ];
 const  aaa = item => {
-  array.filter (arr =>{
+  info.filter (arr =>{
     return arr.item == item
   })
 }
