@@ -4,19 +4,132 @@ html {
   padding: 0;
 }
 
-body {
+h2 {
+  position: relative;
+  padding: 0 65px;
+  text-align: center;
+}
+
+h2:before {
+  position: absolute;
+  top: calc(50% - 1px);
+  left: 0;
+  width: 100%;
+  height: 2px;
+  content: '';
+  background: #000;
+}
+
+h2 span {
+  position: relative;
+  padding: 0px 1em;
+  background: #f9f9f9;
+  white-space: nowrap;
+}
+
+
+/* アンケートのタイトルカード作成 */
+.survey_header {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.survey_header h2 {
+  width: 30%;
+  text-align: center;
+}
+
+.survey_title_container {
+  display: flex;
+  justify-content: center;
+}
+
+.survey_title_wrapper {
+  display: flex;
+  width: 60%;
+  margin-top: 80px;
+  overflow: hidden;
+  border-radius: 20px;
+}
+
+.survey_title_icon {
+  background: #ccc;
+  width: 30%;
+}
+
+.survey_title_content {
+  background: #fff;
+  padding: 24px;
+  width: 100%;
+}
+
+.survey_title_content_title {}
+
+.survey_title_content_content {}
+
+
+/* アンケートフォームの装飾 */
+.survey {
+  margin-top: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.survey_wrapper {
+  width: 60%;
+}
+
+.wrapper {
+  overflow: hidden;
+  border-radius: 20px;
+}
+
+.survey_box {
+  display: flex;
+}
+
+.survey_label {
+  background: #ccc;
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 14px;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.survey_item {
+  background: #fff;
+  width: 100%;
+  padding: 24px;
   display: flex;
   align-items: center;
-  justify-content: center;
-  height: 100vh;
-  background: #FFEFBA;
-  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #FFFFFF, #FFEFBA);
-  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #FFFFFF, #FFEFBA);
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
 }
+
+.survey_item input {
+  margin-left: 20px;
+}
+
+/* 送信ボタン */
+.submit_btn {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 80px;
+}
+
+.submit {
+  min-width: 200px;
+  border: 1px solid #ccc;
+  border-radius: 50px;
+  padding: 10px;
+  box-shadow: 2px 5px 15px -7px rgba(0, 0, 0, 0.6);
+}
+
 
 /* ラジオボタン装飾 */
 
@@ -101,4 +214,72 @@ ul.ks-cboxtags li input[type="checkbox"] {
 
 ul.ks-cboxtags li input[type="checkbox"]:focus+label {
   border: 2px solid #e9a1ff;
+}
+
+/* モーダル作成 */
+.modal_wrapper {
+  display: none;
+  position: fixed;
+  z-index: 10;
+  justify-content: center;
+  align-items: center;
+  inset: 0;
+}
+
+.modal_wrapper:before {
+  content: "";
+  display: block;
+  background-color: rgba(0, 0, 0, .3);
+  position: absolute;
+  inset: 0;
+}
+
+.modal_content {
+  height: 60%;
+  width: 60%;
+  background: #e9a1ff;
+  position: relative;
+  padding: 30px;
+  border-radius: 20px;
+  text-align: center;
+}
+
+.modal_close {
+  position: absolute;
+  top: 3%;
+  right: 3%;
+  width: 35px;
+  height: 35px;
+  background: #F5F5F8;
+  border-radius: 50%;
+  /* cursor: pointer; */
+}
+
+.modal_close::before,
+.modal_close::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 2px;
+  /* 棒の幅（太さ） */
+  height: 18px;
+  /* 棒の高さ */
+  background: #666;
+  /* バツ印の色 */
+  border-radius: 2px;
+}
+
+.modal_close::before {
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.modal_close::after {
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+@media (max-width: 768px) {
+  .survey_item input {
+    width: 50%;
+  }
 }
