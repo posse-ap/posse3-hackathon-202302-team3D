@@ -337,7 +337,7 @@ ul.ks-cboxtags li input[type="checkbox"]:focus+label {
 .modal_wrapper {
   display: none;
   position: fixed;
-  z-index: 10;
+  z-index: 1000;
   justify-content: center;
   align-items: center;
   inset: 0;
@@ -385,6 +385,12 @@ ul.ks-cboxtags li input[type="checkbox"]:focus+label {
   background: #666;
   /* バツ印の色 */
   border-radius: 2px;
+}
+
+.modal_result_content {
+  font-family: 'Microsoft YaHei', "Helvetica Neue", Helvetica, STHeiTi, Arial, sans-serif;
+  font-size: 50px;
+  color:#4169e1;
 }
 
 .modal_close::before {

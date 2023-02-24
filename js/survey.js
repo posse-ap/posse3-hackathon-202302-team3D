@@ -10,20 +10,26 @@
       ]
     },
     {
-      name: "朝活",
+      name: "朝活部",
       item: ["朝型"]
+    },
+    {
+      name: "映画部",
+      item: ["映画"]
+    },
+    {
+      name:"自炊部",
+      item:["料理"]
     }
   ];
 
-  // let items =[]
-  // info.forEach(elm => {
-  // elm["item"].forEach (item=> {
-  //   items.push(item)
-  // })
-  // });
+
+
 
   //フォームの内容をとってくる（たつ）
   document.querySelector('#submit').addEventListener('click', () => {
+    let items = [];
+    let arr = [];
     const element = document.forms.survey;
 
     //名前と期生取得
@@ -39,59 +45,52 @@
 
     console.log(timingValue)
     console.log(personalityValue)
-
+    arr.push(timingValue)
+    arr.push(personalityValue)
 
     //趣味
-
-    const arr = [];
     const chk1 = document.getElementsByName("chk1");
-
-    for (let i = 0; i < chk1.length; i++) {
+    for (let i = 0; i < chk1.length; i++) 
+    {
       if (chk1[i].checked) {//(chk1[i].checked === true)と同じ
+        console.log(chk1[i].value);
         arr.push(chk1[i].value);
-        let club = info.filter(list => {
-
-          list.item.forEach(e => {
-            // console.log(chk1[i].value)
-            // console.log(e)
-            if (e == chk1[i].value) {
-              console.log(list.name)
-              container.innerHTML = list.name;
-              return true;
-            } else {
-              // container.innerHTML=""
-            }
-
-
-          })
-
-
-          return
-          // console.log(arr.item)
-          // arr.item.forEach(e => {
-          //   console.log(e == chk1[i].value);
-        })
-        console.log(club)
-        // let a = aaa(chk1[i].value)
-        // console.log (aaa(chk1[i].value));
       };
     };
+
+
     //スポーツ
-    const rarr = [];
     const chk2 = document.getElementsByName("chk2");
 
     for (let i = 0; i < chk2.length; i++) {
       if (chk2[i].checked) {//(chk2[i].checked === true)と同じ
-        rarr.push(chk2[i].value);
-        // console.log(chk2[i].value)
+        arr.push(chk2[i].value);
+        console.log(chk2[i].value)
       };
     };
+    console.log(items)
+    console.log(arr)
+    info.filter(list => {
+      list.item.forEach(e => {
+        arr.forEach(f => 
+          {
+          if (f == e) {
+            items.push(list.name)
+          }
+        })
+      })
+    })
+    console.log(items)
+    const clubs = Array.from(new Set(items))
+    console.log(clubs.join(', '))
+    container.innerHTML = clubs.join(', ');
   });
 
-
-
-  {
+  const container = document.querySelector('.modal_result_content');
+  
+  
     //モーダルを作る（咲乃）
+    {
     const modal = document.querySelector(".modal_wrapper");
 
     const modalOpen = document.getElementById("submit");
@@ -105,77 +104,12 @@
       $('.modal_wrapper').css('display', 'none');
       container.innerHTML = "";
     });
-
-
   }
 
-
-  //モーダル回答（ひなた）
-
-  // let clubimages = [
-  //   "バスケ部",
-  //   "朝活部",
-  //   "自炊部",
-  //   "ラーメン部"
-  // ];
-
-  // switch (clubimages){
-  //   case "バスケ":
-  //     console.log('バスケ部');
-  //     break;
-  //   case "料理":
-  //     console.log('自炊部');
-  //     break;
-  //   case "朝":
-  //     console.log('朝活部');
-  //     break;
-  //   case "映画":
-  //       console.log('映画部');
-  //       break;
-  // }
-
-  // let info = [
-  //   {
-  //     name: "バスケ部",
-  //     item: [
-  //       "運動",
-  //       "バスケ"
-  //     ]
-  //   },
-  //   {
-  //     name: "朝活",
-  //     item: ["朝型"]
-  //   }
-  // ];
-  
-
-
-  // console.log (items)
-  // const aaa = item => {
-  //   info.filter(arr => {
-  //     // console.log(item)
-  //     return arr.item == item
-  //   })
-  // }
-  // const basket = "運動";
-  //   const club1 = info.filter(arr => {
-  //     // console.log(arr.item)
-  //     arr.item.forEach(e => {
-  //         if(e == basket) {
-  //         console.log(arr.name)
-  //       }
-  //     })
-  //     // return arr.item == "バスケ"
-  //   });
-
-
-
-  // console.log (club1);
-  // console.log (club1[0]);
-  // console.log (club1[0].name);
 }
 
 
 const container = document.querySelector('.modal_result_content');
 console.log(document.querySelector('.modal_result_content'))
+
 
