@@ -1,3 +1,10 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Kosugi Maru', sans-serif;
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+}
+
 /*ヘッダー適応のcss*/
 .logo{
   margin-top: 24px;
@@ -57,17 +64,6 @@ a p{
   margin-top: 16px;
   margin-bottom: 16px;
 }
-
-
-* {
-  margin: 0;
-  padding: 0;
-  font-family: 'Kosugi Maru', sans-serif;
-  font-family: 'M PLUS Rounded 1c', sans-serif;
-}
-
-
-
 
 main {
   background: #D9D9D9;
