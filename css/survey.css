@@ -9,6 +9,7 @@ body,
 html {
   margin: 0;
   padding: 0;
+  background: #FCFFE7;
 }
 
 h2 {
@@ -30,7 +31,7 @@ h2:before {
 h2 span {
   position: relative;
   padding: 0px 1em;
-  background: #f9f9f9;
+  background: #FCFFE7;
   white-space: nowrap;
 }
 
@@ -48,7 +49,6 @@ h2 span {
 
 .status {
   display: block;
-  width: 100%;
   /* アイコンのスペースを確保したpadding-leftを設定する*/
   padding: 0px 16px 0px 40px;
   background-color: #F7F9FB;
@@ -59,7 +59,7 @@ h2 span {
   /* 折り返しの対応*/
   overflow-wrap: break-word;
   background-image: url(/img/conditions_FILL0_wght400_GRAD0_opsz48.png);
-  border-radius: 8%;
+  border-radius: 20px;
   box-shadow: 2px 2px 2px 2px #bbb;
 }
 
@@ -85,8 +85,8 @@ header {
   left: 0;
   width: 100%;
   box-sizing: border-box;
-  padding: 24px 40px;
-  background-color: #c5c6c7;
+  /* padding: 24px 40px; */
+  background-color: #fff;
   position: sticky;
   box-shadow: 2px 2px 2px 2px #bbb;
 }
@@ -94,12 +94,12 @@ header {
 button {
   display: flex;
   text-align: center;
-  margin-right: 60px;
+  margin-right: 16px;
   border: none;
 }
 
 nav {
-  background: #c5c6c7;
+  background: #fff;
 }
 
 h2,
@@ -110,8 +110,7 @@ p {
   font-weight: 700;
   font-size: 24px;
   line-height: 29px;
-  margin-top: 30px;
-  margin-bottom: 30px;
+  margin: 16px 0px;
 }
 
 /* フッター */
@@ -152,7 +151,7 @@ footer p {
 }
 
 .survey_title_icon {
-  background: #b39bc8;
+  background: #BAD7E9;
   width: 30%;
 }
 
@@ -204,7 +203,7 @@ footer p {
 }
 
 .survey_label {
-  background: #b39bc8;
+  background: #BAD7E9;
   width: 30%;
   display: flex;
   justify-content: center;
@@ -221,6 +220,8 @@ footer p {
   padding: 24px;
   display: flex;
   align-items: center;
+  font-size: 22px;
+  gap: 10px;
 }
 
 .survey_item input {
@@ -237,10 +238,12 @@ footer p {
 }
 
 .submit {
+  font-size: 20px;
   min-width: 200px;
-  border: 1px solid #FEF9C7;
-  background: #FEF9C7;
+  border: 1px solid #2B3467;
+  background: #2B3467;
   border-radius: 50px;
+  color: white;
   padding: 10px;
   box-shadow: 2px 5px 15px -7px rgba(0, 0, 0, 0.6);
 }
@@ -311,9 +314,9 @@ ul.ks-cboxtags li input[type="checkbox"]:checked+label::before {
 }
 
 ul.ks-cboxtags li input[type="checkbox"]:checked+label {
-  border: 2px solid #FCE181;
-  background-color: #FCE181;
-  color: #ab8a14;
+  border: 2px solid #e46579;
+  background-color: #fb8195;
+  color: #fff;
   transition: all .2s;
 }
 
@@ -399,7 +402,16 @@ ul.ks-cboxtags li input[type="checkbox"]:focus+label {
 }
 
 @media (max-width: 768px) {
-  .survey_item input {
-    width: 50%;
+  p {
+    font-size: 18px;
+  }
+
+  .survey_item {
+    font-size: 14px;
+    gap: 3px;
+  }
+
+  .survey_label {
+    font-size: 14px;
   }
 }

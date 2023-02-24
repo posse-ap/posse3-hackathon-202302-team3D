@@ -95,7 +95,7 @@
 
     const modalOpen = document.getElementById("submit");
     modalOpen.addEventListener('click', e => {
-      e.preventDefault();
+      // e.preventDefault();
 
       modal.style.display = 'flex';
     })
@@ -109,5 +109,7 @@
 }
 
 
+const container = document.querySelector('.modal_result_content');
+console.log(document.querySelector('.modal_result_content'))
 
 

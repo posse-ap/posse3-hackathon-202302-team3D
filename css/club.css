@@ -6,6 +6,80 @@
 }
 
 /*　ヘッダー*/
+/*ヘッダー適応のcss*/
+.logo {
+    margin-top: 24px;
+    margin-left: 24px;
+    margin-bottom: 40px;
+}
+
+.status-logo {
+    width: 40px;
+    background-color: #7BDCB5;
+}
+
+.status {
+    display: block;
+    /* アイコンのスペースを確保したpadding-leftを設定する*/
+    padding: 0px 16px 0px 40px;
+    background-color: #B8D4D1;
+    /* 左から16pxの上下中央に背景画像を配置*/
+    background-position: left 16px center;
+    background-repeat: no-repeat;
+    background-size: 32px 32px;
+    /* 折り返しの対応*/
+    overflow-wrap: break-word;
+    background-image: url(/img/conditions_FILL0_wght400_GRAD0_opsz48.png);
+    border-radius: 20px;
+    box-shadow: 2px 2px 2px 2px #bbb;
+}
+
+span {
+    font-size: 32px;
+}
+
+.head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between
+}
+
+.header {
+    height: 240px;
+    display: flex;
+    justify-content: center;
+}
+
+header {
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #eee;
+    position: sticky;
+    box-shadow: 2px 2px 2px 2px #bbb;
+}
+
+button {
+    display: flex;
+    text-align: center;
+    margin-right: 16px;
+    border: none;
+}
+
+a p {
+    margin-top: 16px;
+    margin-bottom: 16px;
+    text-align: center;
+    padding: 20px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+}
+
 
 /*ヒーローみたいな*/
 .hero {
@@ -31,7 +105,6 @@
 }
 
 .hero_inline {
-    font-family: 'Noto Sans JP';
     font-style: normal;
     font-weight: 700;
     font-size: 14px;
@@ -48,12 +121,13 @@
 .club_title_container {
     display: flex;
     justify-content: center;
+    margin-bottom: 80px;
 }
 
 .club_itiran {
     background-color: #7BDCB5;
     width: 25%;
-    border-radius:5px;
+    border-radius: px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     margin-top: 20px;
 }
@@ -81,8 +155,8 @@
 }
 
 @media screen and (max-width: 768px) {
-    .pro{
-        width:fit-content;
+    .pro {
+        width: fit-content;
         height: 100%;
     }
 }
@@ -91,7 +165,6 @@ section {
     width: 100%;
     display: flex;
     justify-content: center;
-    margin-top: 5%;
 }
 
 .club_basket {
@@ -102,6 +175,8 @@ section {
     display: flex;
     border-radius: 20px;
     overflow: hidden;
+    margin-bottom: 5%;
+
 }
 
 @media screen and (max-width: 768px) {
@@ -146,7 +221,7 @@ section {
     width: 100%;
     object-fit: cover;
     display: flex;
-    
+
 
 }
 
@@ -158,16 +233,16 @@ section {
     }
 }
 
-.club_img_container{
-  width: 100%;
-  background-color: bisque;
+.club_img_container {
+    width: 100%;
+    background-color: bisque;
 }
 
 @media screen and (max-width: 768px) {
-    .club_img_container{
+    .club_img_container {
         display: flex;
         justify-content: center;
-      
+
     }
 }
 
@@ -259,16 +334,16 @@ section {
     justify-content: center;
 }
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 768px) {
     .club_button {
         font-size: 14px;
     }
 }
 
-.club_button:hover{
+.club_button:hover {
     color: #27acd9;
     background: #fff;
-    
+
 }
 
 /*自炊*/
@@ -278,3 +353,17 @@ section {
 /*ラーメン*/
 
 /*フッター*/
+footer{
+    display: flex;
+    justify-content: center;
+}
+
+footer p {
+    font-weight: thin;
+    font-size: 16px;
+    margin-bottom: 16px;
+}
+
+.copyright {
+    margin-top: 16px;
+}

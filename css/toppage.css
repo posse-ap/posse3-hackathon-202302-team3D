@@ -1,3 +1,10 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Kosugi Maru', sans-serif;
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+}
+
 /*ヘッダー適応のcss*/
 .logo{
   margin-top: 24px;
@@ -60,12 +67,6 @@ a p{
 }
 
 
-* {
-  margin: 0;
-  padding: 0;
-  font-family: 'Kosugi Maru', sans-serif;
-  font-family: 'M PLUS Rounded 1c', sans-serif;
-}
 main {
   background: #D9D9D9;
 }
@@ -99,7 +100,7 @@ main {
 
 
 .btn_text::before{
-  font-family: "material-symbols-outlined";
+  /* font-family: "material-symbols-outlined"; */
   content: e5e1;
 }
 
@@ -413,11 +414,32 @@ a:active {
   transition: all 0.5s;
 }
 
+/*実質フッターcss*/
+.go-top{
+  float: right;
+  display: flex;
+  display: inline;
+  justify-content: center;
+  padding: 4px 24px;
+  border-radius: 20px;
+  background-color: #b6c9f3;
+  border: none;
+  color: white;
+  margin-top: 16px;
+  margin-right: 16px;
+  box-shadow: 1px 1px 1px 1px#bbb;
+}
+.go-top a{
+  color: white;
+}
 footer p{
   font-weight: thin;
   font-size: 16px;
   margin-bottom: 16px;
 }
 .copyright{
+  display: inline;
+  display: flex;
+  justify-content: center;
   margin-top: 16px;
 }

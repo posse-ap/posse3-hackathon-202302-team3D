@@ -4,19 +4,25 @@
   font-family: 'Kosugi Maru', sans-serif;
   font-family: 'M PLUS Rounded 1c', sans-serif;
 }
+
+body {
+  background: #FCFFE7;
+}
+
 /*ヘッダー適応のcss*/
-.logo{
+.logo {
   margin-top: 24px;
   margin-left: 24px;
   margin-bottom: 40px;
 }
-.status-logo{
+
+.status-logo {
   width: 40px;
   background-color: #7BDCB5;
 }
+
 .status1 {
   display: block;
-  width: 100%;
   /* アイコンのスペースを確保したpadding-leftを設定する*/
   padding: 0px 16px 0px 40px;
   background-color: #F7F9FB;
@@ -27,43 +33,48 @@
   /* 折り返しの対応*/
   overflow-wrap: break-word;
   background-image: url(/img/conditions_FILL0_wght400_GRAD0_opsz48.png);
-  border-radius: 8%;
+  border-radius: 20px;
   box-shadow: 2px 2px 2px 2px #bbb;
 }
-span{
+
+span {
   font-size: 32px;
 }
-.head{
+
+.head {
   display: flex;
   align-items: center;
   justify-content: space-between
 }
+
 /* .header{
   height: 240px;
   display: flex;
   justify-content: center;
 } */
-header{
+header {
   position: fixed;
   z-index: 999;
   top: 0;
   left: 0;
   width: 100%;
   box-sizing: border-box;
-  padding: 24px 40px;
-  background-color: #EDEAE5;
+  background-color: #fff;
   position: sticky;
   box-shadow: 2px 2px 2px 2px #bbb;
 }
+
 nav {
-  background: #EDEAE5;
+  background: #fff;
 }
-button{
+
+button {
   display: flex;
   text-align: center;
-  margin-right: 60px;
+  margin-right: 16px;
   border: none;
 }
+
 h2,
 p {
   text-align: center;
@@ -72,15 +83,16 @@ p {
   font-weight: 700;
   font-size: 24px;
   line-height: 29px;
-  margin-top: 30px;
-  margin-bottom: 30px;
+  margin: 16px 0px;
 }
+
 /* フッター */
-footer p{
+footer p {
   font-weight: thin;
   font-size: 16px;
 }
-.copyright{
+
+.copyright {
   margin-top: 120px;
 }
 
@@ -93,16 +105,39 @@ footer p{
 
 .status_title {
   text-align: center;
+  font-size: 60px;
+}
+
+.status_title {
+  position: relative;
+  padding: 0.8rem 0;
+  margin-bottom: 0.2rem;
+  color: #323232;
+  font-weight: bold;
+  font-size: 50px;
+}
+
+
+.status_title:before {
+  border-bottom: 5px solid #e860ce;
+  position: absolute;
+  width: 17%;
+  left: 50%;
+  bottom: -30%;
+  content: '';
+  transform: translate(-50%, 0%);
 }
 
 .status_wrapper {
-  margin-top: 30px;
+  margin-top: 70px;
 }
 
 .status_3_0 {}
 
 .grade h2 {
   text-align: center;
+  color: #2B3467;
+  font-size: 36px;
 }
 
 .box {
@@ -136,7 +171,7 @@ footer p{
   /* width: 100%; */
   /* height: 100%; */
   display: inline-block;
-  border: 2px solid #F09B09;
+  border: 2px solid #3990e6;
   border-radius: 5px;
   padding: 1rem;
   cursor: pointer;
@@ -146,17 +181,20 @@ footer p{
 }
 
 .radio_tile_label::before {
-  content: url("../img/task.png");
+  content: url("../img/checked1.png");
 }
+
 .radio_tile_label::before {
   /* content: url("../img/check_v.png"); */
 }
+
 .radio_button:checked+.radio_tile .radio_tile_label::before {
   content: url("../img/check_v.png");
 }
+
 .radio_button:checked+.radio_tile .radio_tile_label {
-  background-color: #FCE181;
-  border: 2px solid #FCE181;
+  background-color: #61b7ed;
+  border: 2px solid #61b7ed;
   color: white;
   transform: scale(1.1, 1.1);
 }
