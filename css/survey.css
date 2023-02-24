@@ -221,6 +221,8 @@ footer p {
   padding: 24px;
   display: flex;
   align-items: center;
+  font-size: 22px;
+  gap: 10px;
 }
 
 .survey_item input {
@@ -237,6 +239,7 @@ footer p {
 }
 
 .submit {
+  font-size: 20px;
   min-width: 200px;
   border: 1px solid #FEF9C7;
   background: #FEF9C7;
@@ -393,7 +396,19 @@ ul.ks-cboxtags li input[type="checkbox"]:focus+label {
 }
 
 @media (max-width: 768px) {
-  .survey_item input {
-    width: 50%;
+  header {
+    padding: 
+  }
+  p {
+    font-size: 18px;
+  }
+
+  .survey_item {
+    font-size: 14px;
+    gap: 3px;
+  }
+
+  .survey_label {
+    font-size: 14px;
   }
 }
