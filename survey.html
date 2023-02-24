@@ -6,14 +6,34 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>アンケート</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Kosugi+Maru&family=Noto+Sans+JP:wght@100;300;400;500;700;900&family=Poppins:wght@300;400;500;700;800&display=swap"
+    rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kosugi+Maru&family=M+PLUS+Rounded+1c:wght@300;400;500;700;800&family=Noto+Sans+JP:wght@100;300;400;500;700;900&family=Poppins:wght@300;400;500;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./css/common.css">
   <link rel="stylesheet" href="./css/survey.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="./js/survey.js" defer></script>
 </head>
 
 <body>
-  <header class="header"></header>
+  <header class="header">
+    <section class="head">
+      <img src="img/posse.png" class="logo">
+      <button>
+        <nav>
+          <a href="/status.html" class="status">
+            <p>status</p>
+          </a>
+        </nav>
+      </button>
+    </section>
+  </header>
   <main class="main">
     <section class="survey_title">
       <div class="survey_title_container">
@@ -32,7 +52,9 @@
         <div class="survey_header">
           <h2><span>アンケート</span></h2>
         </div>
-        <form method="post" action="https://script.google.com/macros/s/AKfycbwWqdSFTZS3GuU9lerHKfMXTVzUACIoie2gieWjP9n6AcvyA9b-0R6mc3_YMiPQsnNjKw/exec" name="survey">
+        <form method="post"
+          action="https://script.google.com/macros/s/AKfycbwWqdSFTZS3GuU9lerHKfMXTVzUACIoie2gieWjP9n6AcvyA9b-0R6mc3_YMiPQsnNjKw/exec"
+          name="survey">
           <div class="wrapper">
             <div class="survey_name survey_box">
               <div class="survey_label">Q.あなたの名前は？</div>
@@ -111,7 +133,9 @@
     </div>
 
   </main>
-  <footer class="footer"></footer>
+  <footer>
+    <p class="copyright">&copy;Dairoku・D・Kousaku</p>
+  </footer>
 </body>
 
 </html>
