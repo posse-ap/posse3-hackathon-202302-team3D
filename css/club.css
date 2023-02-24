@@ -1,0 +1,148 @@
+/*　ヘッダー*/
+
+/*ヒーローみたいな*/
+.hero {
+    background-image: url();
+    background-size: cover;
+    width: 1440px;
+    height: 200px;
+    background-color: coral;
+}
+
+.hero_title {
+    position: absolute;
+    top: 5%;
+    left: 45%;
+}
+
+.hero_label {
+    font-family: 'Montserrat';
+    font-style: italic;
+    color: #fff;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 150%;
+}
+
+.hero_inline {
+    font-family: 'Noto Sans JP';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 150%;
+}
+
+
+/* メイン全体 */
+.main {
+    background-color: #d9d9d9;
+    width: 100%;
+}
+.club_itiran {
+    background-color: #7BDCB5;
+    width: 13%;
+    border-radius: 20px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin-left: 35%;
+}
+.itiran {
+font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 20px;
+line-height: 29px;
+display: flex;
+align-items: center;
+text-align: center;
+padding: 10%;
+padding-left: 25%;
+}
+
+/*バスケ*/
+.pro {
+    background-color: #fff;
+    width: 880px;
+    /* height: 320px; */
+    padding: 20px;
+}
+section {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+}
+.club_basket {
+    width: 40%;
+    /* height: 320px; */
+    left: 26px;
+    top: 39px;
+    display: flex;
+
+}
+
+.club_img {
+    background-color: #EDEDED;
+    width: 350px;
+}
+
+.club_1 {
+    display: flex;  
+    gap: 150px;
+}
+.club_2 {
+    font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 15px;
+line-height: 29px;
+display: flex;
+align-items: center;
+text-align: center;
+padding-left: 80px;
+padding-top: 20px;
+padding-bottom: 20px;
+}
+.de {
+    font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 15px;
+line-height: 20px;
+align-items: center;
+}
+.name {
+    font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 15px;
+line-height: 29px;
+display: flex;
+align-items: center;
+text-align: center;
+padding-left: 40px;
+}
+
+
+.club_button{
+font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 13px;
+line-height: 19px;
+display: flex;
+padding: 5%;
+background-color: #d9d9d9;
+width: 40%;
+justify-content: center;
+border-radius: 30px;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+align-items: center;
+}
+
+/*自炊*/
+
+/*朝活*/
+
+/*ラーメン*/
+
+/*フッター*/
