@@ -1,3 +1,10 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Kosugi Maru', sans-serif;
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+}
+
 .status {
   margin: 80px 30px;
 }
