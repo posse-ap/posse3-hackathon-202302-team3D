@@ -102,3 +102,65 @@ ul.ks-cboxtags li input[type="checkbox"] {
 ul.ks-cboxtags li input[type="checkbox"]:focus+label {
   border: 2px solid #e9a1ff;
 }
+
+/* モーダル作成 */
+.modal_wrapper {
+  display: none;
+  position: fixed;
+  z-index: 10;
+  justify-content: center;
+  align-items: center;
+  inset: 0;
+}
+
+.modal_wrapper:before {
+  content: "";
+  display: block;
+  background-color: rgba(0, 0, 0, .3);
+  position: absolute;
+  inset: 0;
+}
+
+.modal_content {
+  height: 60%;
+  width: 60%;
+  background: #e9a1ff;
+  position: relative;
+  padding: 30px;
+  border-radius: 20px;
+  text-align: center;
+}
+
+.modal_close {
+  position: absolute;
+  top: 3%;
+  right: 3%;
+  width: 35px;
+  height: 35px;
+  background: #F5F5F8;
+  border-radius: 50%;
+  /* cursor: pointer; */
+}
+
+.modal_close::before,
+.modal_close::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 2px;
+  /* 棒の幅（太さ） */
+  height: 18px;
+  /* 棒の高さ */
+  background: #666;
+  /* バツ印の色 */
+  border-radius: 2px;
+}
+
+.modal_close::before {
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.modal_close::after {
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
