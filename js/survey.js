@@ -84,6 +84,7 @@
       if (chk2[i].checked) {//(chk2[i].checked === true)と同じ
         rarr.push(chk2[i].value);
         // console.log(chk2[i].value)
+        
       };
     };
   });
