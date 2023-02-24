@@ -415,3 +415,32 @@ ul.ks-cboxtags li input[type="checkbox"]:focus+label {
     font-size: 14px;
   }
 }
+/*実質フッターcss*/
+.go-top{
+  float: right;
+  display: flex;
+  display: inline;
+  justify-content: center;
+  padding: 4px 24px;
+  border-radius: 20px;
+  background-color: #b6c9f3;
+  border: none;
+  color: white;
+  margin-top: 16px;
+  margin-right: 16px;
+  box-shadow: 1px 1px 1px 1px#bbb;
+}
+.go-top a{
+  color: white;
+}
+footer p{
+  font-weight: thin;
+  font-size: 16px;
+  margin-bottom: 16px;
+}
+.copyright{
+  display: inline;
+  display: flex;
+  justify-content: center;
+  margin-top: 16px;
+}
