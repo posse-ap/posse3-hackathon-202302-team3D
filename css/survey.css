@@ -48,7 +48,6 @@ h2 span {
 
 .status {
   display: block;
-  width: 100%;
   /* アイコンのスペースを確保したpadding-leftを設定する*/
   padding: 0px 16px 0px 40px;
   background-color: #F7F9FB;
@@ -59,7 +58,7 @@ h2 span {
   /* 折り返しの対応*/
   overflow-wrap: break-word;
   background-image: url(/img/conditions_FILL0_wght400_GRAD0_opsz48.png);
-  border-radius: 8%;
+  border-radius: 20px;
   box-shadow: 2px 2px 2px 2px #bbb;
 }
 
@@ -85,7 +84,7 @@ header {
   left: 0;
   width: 100%;
   box-sizing: border-box;
-  padding: 24px 40px;
+  /* padding: 24px 40px; */
   background-color: #c5c6c7;
   position: sticky;
   box-shadow: 2px 2px 2px 2px #bbb;
@@ -94,7 +93,7 @@ header {
 button {
   display: flex;
   text-align: center;
-  margin-right: 60px;
+  margin-right: 16px;
   border: none;
 }
 
@@ -110,8 +109,7 @@ p {
   font-weight: 700;
   font-size: 24px;
   line-height: 29px;
-  margin-top: 30px;
-  margin-bottom: 30px;
+  margin: 16px 0px;
 }
 
 /* フッター */
@@ -396,9 +394,6 @@ ul.ks-cboxtags li input[type="checkbox"]:focus+label {
 }
 
 @media (max-width: 768px) {
-  header {
-    padding: 
-  }
   p {
     font-size: 18px;
   }

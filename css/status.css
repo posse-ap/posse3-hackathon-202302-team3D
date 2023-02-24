@@ -16,7 +16,6 @@
 }
 .status1 {
   display: block;
-  width: 100%;
   /* アイコンのスペースを確保したpadding-leftを設定する*/
   padding: 0px 16px 0px 40px;
   background-color: #F7F9FB;
@@ -27,7 +26,7 @@
   /* 折り返しの対応*/
   overflow-wrap: break-word;
   background-image: url(/img/conditions_FILL0_wght400_GRAD0_opsz48.png);
-  border-radius: 8%;
+  border-radius: 20px;
   box-shadow: 2px 2px 2px 2px #bbb;
 }
 span{
@@ -50,7 +49,6 @@ header{
   left: 0;
   width: 100%;
   box-sizing: border-box;
-  padding: 24px 40px;
   background-color: #EDEAE5;
   position: sticky;
   box-shadow: 2px 2px 2px 2px #bbb;
@@ -61,7 +59,7 @@ nav {
 button{
   display: flex;
   text-align: center;
-  margin-right: 60px;
+  margin-right: 16px;
   border: none;
 }
 h2,
@@ -72,8 +70,7 @@ p {
   font-weight: 700;
   font-size: 24px;
   line-height: 29px;
-  margin-top: 30px;
-  margin-bottom: 30px;
+  margin: 16px 0px;
 }
 /* フッター */
 footer p{
