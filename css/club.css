@@ -115,6 +115,7 @@ a p {
 .club_title_container {
     display: flex;
     justify-content: center;
+    margin-bottom: 80px;
 }
 
 .club_itiran {
@@ -158,7 +159,6 @@ section {
     width: 100%;
     display: flex;
     justify-content: center;
-    margin-top: 5%;
 }
 
 .club_basket {
