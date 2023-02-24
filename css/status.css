@@ -151,6 +151,13 @@ footer p {
   justify-content: center;
 }
 
+@media screen and (max-width: 768px) {
+  .box {
+    display: block;
+    text-align: center;
+  }
+}
+
 .input_list {
   display: flex;
 }
