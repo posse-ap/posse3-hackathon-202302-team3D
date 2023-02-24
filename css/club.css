@@ -1,0 +1,408 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Kosugi Maru', sans-serif;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+}
+
+/*　ヘッダー*/
+/*ヘッダー適応のcss*/
+.logo {
+    margin-left: 24px;
+}
+
+.status-logo {
+    width: 40px;
+    background-color: #7BDCB5;
+}
+
+.status {
+    display: block;
+    /* アイコンのスペースを確保したpadding-leftを設定する*/
+    padding: 0px 16px 0px 40px;
+    background-color: #ffffff;
+    /* 左から16pxの上下中央に背景画像を配置*/
+    background-position: left 16px center;
+    background-repeat: no-repeat;
+    background-size: 32px 32px;
+    /* 折り返しの対応*/
+    overflow-wrap: break-word;
+    background-image: url(/img/conditions_FILL0_wght400_GRAD0_opsz48.png);
+    border-radius: 20px;
+    box-shadow: 2px 2px 2px 2px #bbb;
+}
+
+span {
+    font-size: 32px;
+}
+
+.head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between
+}
+
+.header {
+    height: 240px;
+    display: flex;
+    justify-content: center;
+}
+
+header {
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #ffffff;
+    position: sticky;
+    box-shadow: 2px 2px 2px 2px #bbb;
+}
+
+button {
+    display: flex;
+    text-align: center;
+    margin-right: 16px;
+    border: none;
+}
+
+a p {
+    margin-top: 16px;
+    margin-bottom: 16px;
+    text-align: center;
+    padding: 20px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+}
+
+
+/*ヒーローみたいな*/
+.hero {
+    background-image: url();
+    background-size: cover;
+    width: 1440px;
+    height: 200px;
+    background-color: coral;
+}
+
+.hero_title {
+    position: absolute;
+    top: 5%;
+    left: 45%;
+}
+
+.hero_label {
+    font-style: italic;
+    color: #fff;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 150%;
+}
+
+.hero_inline {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 150%;
+}
+
+nav{
+    background-color: #ffffff;
+}
+
+/* メイン全体 */
+.main {
+    background-color: #FCFFE7;
+    width: 100%;
+}
+
+.club_title_container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 80px;
+}
+
+@media screen and (max-width: 768px) {
+    .club_title_container{
+        display: flex;
+    justify-content: center;
+    margin-bottom: 25px;
+    }
+}
+
+.club_itiran {
+    background-color: #BAD7E9;
+    width: 25%;
+    border-radius: 20px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin-top: 60px;
+}
+
+@media screen and (max-width: 768px) {
+    .club_itiran{
+        background-color: #BAD7E9;
+    width: 25%;
+    border-radius: 20px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin-top: 30px;
+    }
+}
+
+.itiran {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 29px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding: 5% 10%;
+    justify-content: center;
+}
+
+/*バスケ*/
+.pro {
+    background-color: #fff;
+    width: 880px;
+    /* height: 320px; */
+    padding: 20px;
+    display: flex;
+    align-items: center;
+}
+
+@media screen and (max-width: 768px) {
+    .pro {
+        width: fit-content;
+        height: 100%;
+    }
+}
+
+section {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.club_basket {
+    width: 70%;
+    height: 100%;
+    left: 26px;
+    top: 39px;
+    display: flex;
+    border-radius: 20px;
+    overflow: hidden;
+    margin-bottom: 5%;
+
+}
+
+@media screen and (max-width: 768px) {
+
+    .club_basket {
+        width: 50%;
+        background-color: antiquewhite;
+        display: block;
+        border-radius: 20px;
+        overflow: hidden;
+        height: 100%;
+    }
+}
+
+.club_img_container {
+    display: flex;
+    align-items: center;
+}
+
+.club_img {
+    background-color: #ebe8ca;
+    /* width: 350px; */
+    /*  width: 30%;
+  height: 30%; */
+    width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+
+    .club_img {
+        height: 20%;
+    }
+}
+
+/* .club_img::before{
+    content: "";
+    padding-top: 100%;
+    display: block;
+} */
+
+.club_img img {
+    width: 100%;
+    object-fit: cover;
+    display: flex;
+
+
+}
+
+@media screen and (max-width: 768px) {
+    .club_img img {
+        width: 100%;
+        object-fit: cover;
+        max-height: 250px;
+    }
+}
+
+.club_img_container {
+    width: 100%;
+    background-color: bisque;
+}
+
+@media screen and (max-width: 768px) {
+    .club_img_container {
+        display: flex;
+        justify-content: center;
+
+    }
+}
+
+
+
+.club_1 {
+    display: flex;
+    /* gap: 150px; */
+    justify-content: center;
+    gap: 30px;
+}
+
+@media screen and (max-width: 768px) {
+    .club_1 {
+        display: block;
+        text-align: center;
+    }
+}
+
+.club_2 {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 29px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    justify-content: center;
+}
+
+.club_member {
+    display: flex;
+    justify-content: center;
+    gap: 5%;
+    padding-bottom: 15px;
+}
+
+.club_member img {
+    width: 10%;
+    border-radius: 50%;
+}
+
+
+.de {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 20px;
+    align-items: center;
+}
+
+.name {
+    font-style: normal;
+    font-weight: 1000;
+    font-size: 25px;
+    line-height: 29px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media screen and (max-width:768px) {
+    .name {
+        margin-bottom: 10px;
+    }
+}
+
+.club_button_container {
+    display: flex;
+    justify-content: center;
+}
+
+.club_button {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 19px;
+    /*     display: flex; */
+    padding: 10px;
+    background-color: #BAD7E9;
+    /* width: 40%; */
+    justify-content: center;
+    border-radius: 30px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+@media screen and (max-width: 768px) {
+    .club_button {
+        font-size: 14px;
+    }
+}
+
+.club_button:hover {
+    color: #2B3467;
+    background: #ffffff;
+
+}
+
+/*自炊*/
+
+/*朝活*/
+
+/*ラーメン*/
+
+/*フッター*/
+footer{
+    display: flex;
+    justify-content: center;
+    background-color: #FCFFE7;
+}
+
+.go-top{
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+    padding: 4px 24px;
+    border-radius: 20px;
+    background-color: #BAD7E9;
+    border: none;
+    color: white;
+    box-shadow: 1px 1px 1px 1px#bbb;
+}
+
+footer p {
+    font-weight: thin;
+    font-size: 16px;
+    margin-bottom: 16px;
+    font-style: normal;
+    font-weight: 700;
+}
+
+.button_top{
+    display: flex;
+    justify-content: center;
+}
+
+/* .copyright {
+    margin-top: 16px;
+} */

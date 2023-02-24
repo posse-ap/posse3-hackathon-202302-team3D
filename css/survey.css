@@ -1,0 +1,461 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Kosugi Maru', sans-serif;
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+}
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  background: #FCFFE7;
+}
+
+h2 {
+  position: relative;
+  padding: 0 65px;
+  text-align: center;
+}
+
+h2:before {
+  position: absolute;
+  top: calc(50% - 1px);
+  left: 0;
+  width: 100%;
+  height: 2px;
+  content: '';
+  background: #000;
+}
+
+h2 span {
+  position: relative;
+  padding: 0px 1em;
+  background: #FCFFE7;
+  white-space: nowrap;
+}
+
+/*ヘッダー適応のcss*/
+.logo {
+  margin-top: 24px;
+  margin-left: 24px;
+  margin-bottom: 40px;
+}
+
+.status-logo {
+  width: 40px;
+  background-color: #7BDCB5;
+}
+
+.status {
+  display: block;
+  /* アイコンのスペースを確保したpadding-leftを設定する*/
+  padding: 0px 16px 0px 40px;
+  background-color: #F7F9FB;
+  /* 左から16pxの上下中央に背景画像を配置*/
+  background-position: left 16px center;
+  background-repeat: no-repeat;
+  background-size: 32px 32px;
+  /* 折り返しの対応*/
+  overflow-wrap: break-word;
+  background-image: url(/img/conditions_FILL0_wght400_GRAD0_opsz48.png);
+  border-radius: 20px;
+  box-shadow: 2px 2px 2px 2px #bbb;
+}
+
+span {
+  font-size: 32px;
+}
+
+.head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between
+}
+
+/* .header{
+  height: 240px;
+  display: flex;
+  justify-content: center;
+} */
+header {
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  width: 100%;
+  box-sizing: border-box;
+  /* padding: 24px 40px; */
+  background-color: #fff;
+  position: sticky;
+  box-shadow: 2px 2px 2px 2px #bbb;
+}
+
+button {
+  display: flex;
+  text-align: center;
+  margin-right: 16px;
+  border: none;
+}
+
+nav {
+  background: #fff;
+}
+
+h2,
+p {
+  text-align: center;
+  padding: 20px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+  margin: 16px 0px;
+}
+
+/* フッター */
+footer p {
+  font-weight: thin;
+  font-size: 16px;
+  margin-bottom: 16px;
+    font-style: normal;
+    font-weight: 700;
+}
+
+/* .copyright {
+  margin-top: px;
+} */
+
+
+
+/* アンケートのタイトルカード作成 */
+.survey_header {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.survey_header h2 {
+  /* width: 30%; */
+  text-align: center;
+}
+
+.survey_title_container {
+  display: flex;
+  justify-content: center;
+}
+
+.survey_title_wrapper {
+  display: flex;
+  width: 60%;
+  margin-top: 80px;
+  overflow: hidden;
+  border-radius: 20px;
+}
+
+.survey_title_icon {
+  background: #BAD7E9;
+  width: 30%;
+}
+
+.survey_title_content {
+  background: #ffffff;
+  padding: 24px;
+  width: 100%;
+}
+
+.survey_title_content_title {}
+
+.survey_title_content_content {}
+
+
+/* アンケートフォームの装飾 */
+.survey {
+  margin-top: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.survey_title_icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.survey_icon {
+  width: 80%;
+}
+
+.survey_wrapper {
+  width: 60%;
+}
+
+.wrapper {
+  overflow: hidden;
+  border-radius: 20px;
+}
+
+/* .survey_box label {
+  font-size: 20px;
+  font-weight: bold;
+} */
+
+.survey_box {
+  display: flex;
+}
+
+.survey_label {
+  background: #BAD7E9;
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 14px;
+  text-align: center;
+  box-sizing: border-box;
+  font-size: 20px;
+}
+
+.survey_item {
+  background: #fff;
+  width: 100%;
+  padding: 24px;
+  display: flex;
+  align-items: center;
+  font-size: 22px;
+  gap: 10px;
+}
+
+.survey_item input {
+  margin-left: 20px;
+}
+
+/* 送信ボタン */
+.submit_btn {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.submit {
+  font-size: 20px;
+  min-width: 200px;
+  border: 1px solid #2B3467;
+  background: #2B3467;
+  border-radius: 50px;
+  color: white;
+  padding: 10px;
+  box-shadow: 2px 5px 15px -7px rgba(0, 0, 0, 0.6);
+}
+
+
+/* ラジオボタン装飾 */
+
+
+/* チェックボックス装飾 */
+
+ul.ks-cboxtags {
+  list-style: none;
+  padding: 20px;
+}
+
+ul.ks-cboxtags li {
+  display: inline;
+}
+
+ul.ks-cboxtags li label {
+  display: inline-block;
+  background-color: #F7F9FB;
+  border: 2px solid rgba(139, 139, 139, .3);
+  color: #adadad;
+  border-radius: 25px;
+  white-space: nowrap;
+  margin: 3px 0px;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+  transition: all .2s;
+}
+
+ul.ks-cboxtags li label {
+  padding: 8px 12px;
+  cursor: pointer;
+}
+
+ul.ks-cboxtags li label::before {
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  font-weight: 900;
+  font-size: 12px;
+  padding: 2px 6px 2px 2px;
+  content: "";
+  background: url("../img/add.png") no-repeat;
+  background-size: contain;
+  width: 14px;
+  height: 8px;
+  transition: transform .3s ease-in-out;
+}
+
+ul.ks-cboxtags li input[type="checkbox"]:checked+label::before {
+  /* content: url("../img/check_v.png"); */
+  content: "";
+  background: url("../img/check_v.png") no-repeat;
+  background-size: contain;
+  width: 14px;
+  height: 8px;
+  transform: rotate(-360deg);
+  transition: transform .3s ease-in-out;
+}
+
+ul.ks-cboxtags li input[type="checkbox"]:checked+label {
+  border: 2px solid #e46579;
+  background-color: #fb8195;
+  color: #fff;
+  transition: all .2s;
+}
+
+ul.ks-cboxtags li input[type="checkbox"] {
+  display: absolute;
+}
+
+ul.ks-cboxtags li input[type="checkbox"] {
+  position: absolute;
+  opacity: 0;
+}
+
+ul.ks-cboxtags li input[type="checkbox"]:focus+label {
+  border: 2px solid #FCE181;
+}
+
+/* モーダル作成 */
+.modal_wrapper {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  justify-content: center;
+  align-items: center;
+  inset: 0;
+}
+
+.modal_wrapper:before {
+  content: "";
+  display: block;
+  background-color: rgba(0, 0, 0, .3);
+  position: absolute;
+  inset: 0;
+}
+
+.modal_content {
+  height: 60%;
+  width: 60%;
+  background: #deeafc;
+  position: relative;
+  padding: 30px;
+  border-radius: 20px;
+  text-align: center;
+}
+
+.modal_close {
+  position: absolute;
+  top: 3%;
+  right: 3%;
+  width: 35px;
+  height: 35px;
+  background: #F5F5F8;
+  border-radius: 50%;
+  /* cursor: pointer; */
+}
+
+.modal_close::before,
+.modal_close::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 2px;
+  /* 棒の幅（太さ） */
+  height: 18px;
+  /* 棒の高さ */
+  background: #666;
+  /* バツ印の色 */
+  border-radius: 2px;
+}
+
+.modal_result_content {
+  font-family: 'Microsoft YaHei', "Helvetica Neue", Helvetica, STHeiTi, Arial, sans-serif;
+  font-size: 50px;
+  color:#4169e1;
+}
+
+.modal_close::before {
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.modal_close::after {
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+@media (max-width: 768px) {
+  p {
+    font-size: 18px;
+  }
+
+  .survey_item {
+    font-size: 14px;
+    gap: 3px;
+  }
+
+  .survey_label {
+    font-size: 14px;
+  }
+}
+/*実質フッターcss*/
+.go-top{
+  float: right;
+  display: flex;
+  display: inline;
+  justify-content: center;
+  padding: 4px 24px;
+  border-radius: 20px;
+  background-color: #b6c9f3;
+  border: none;
+  color: white;
+  margin-top: 16px;
+  margin-right: 16px;
+  box-shadow: 1px 1px 1px 1px#bbb;
+}
+
+.go-top{
+
+}
+
+.button_top{
+  display: flex;
+  justify-content: center;
+}
+
+.button_top p{
+  line-height: 29px;
+}
+
+.go-top a{
+  color: white;
+}
+.footer{
+  background: #FCFFE7;
+}
+.copyright{
+  display: inline;
+  display: flex;
+  justify-content: center;
+ /*  margin-top: 16px; */
+}

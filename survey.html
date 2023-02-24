@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>アンケート</title>
+  <link rel="stylesheet" href="./css/common.css">
+  <link rel="stylesheet" href="./css/survey.css">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Kosugi+Maru&family=Noto+Sans+JP:wght@100;300;400;500;700;900&family=Poppins:wght@300;400;500;700;800&display=swap"
+    rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kosugi+Maru&family=M+PLUS+Rounded+1c:wght@300;400;500;700;800&family=Noto+Sans+JP:wght@100;300;400;500;700;900&family=Poppins:wght@300;400;500;700;800&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="./js/survey.js" defer></script>
+</head>
+
+<body>
+  <header class="header">
+    <section class="head">
+      <img src="img/posse.png" class="logo">
+      <button>
+        <nav>
+          <a href="/status.html" class="status">
+            <p>status</p>
+          </a>
+        </nav>
+      </button>
+    </section>
+  </header>
+  <main class="main">
+    <section class="survey_title">
+      <div class="survey_title_container">
+        <div class="survey_title_wrapper">
+          <div class="survey_title_icon">
+            <img src="./img/survey.png" alt="" class="survey_icon">
+          </div>
+          <div class="survey_title_content">
+            <p class="survey_title_content_title">診断とは・・・？</p>
+            <p class="survey_title_content_content">質問の答えに沿って最適なPOSSE部活をお勧めします！<br>早速診断してみましょう！</p>
+          </div>
+        </div>
+        <div class="survey_title_btn"></div>
+      </div>
+    </section>
+    <section class="survey">
+      <div class="survey_wrapper">
+        <div class="survey_header">
+          <h2><span>アンケート</span></h2>
+        </div>
+        <form method="post"
+          action="https://script.google.com/macros/s/AKfycbzWg3AjRfZj0Jy6X3oiFRc23eBiBcfIhnycwxpifq7x_N5xo5Yt63GDlSK9z6jjZxTxFw/exec"
+          name="survey">
+          <div class="wrapper">
+            <div class="survey_name survey_box">
+              <div class="survey_label">Q.あなたの名前は？</div>
+              <div class="survey_item">
+                <label for="name">A.</label>
+                <input type="text" name="name" id="">
+              </div>
+            </div>
+            <div class="survey_grade survey_box">
+              <div class="survey_label">Q.あなたの期生は？</div>
+              <div class="survey_item">
+                <label for="grade">A.</label>
+                <input type="radio" name="grade" id="" value="3.0">3.0
+                <input type="radio" name="grade" id="" value="3.5">3.5
+              </div>
+            </div>
+            <div class="survey_hobby survey_box">
+              <div class="survey_label">Q.あなたの趣味は？</div>
+              <div class="survey_item">
+                <label for="hobby">A.</label>
+                <ul class="ks-cboxtags">
+                  <li><input type="checkbox" id="cafe" value="カフェ巡り" name="chk1"><label for="cafe">カフェ巡り</label></li>
+                  <li><input type="checkbox" id="movie" value="映画" name="chk1"><label for="movie">映画</label></li>
+                  <li><input type="checkbox" id="food" value="料理" name="chk1"><label for="food">料理</label></li>
+                  <li><input type="checkbox" id="exercise" value="運動" name="chk1"><label for="exercise">運動</label></li>
+                </ul>
+              </div>
+            </div>
+            <div class="survey_timing survey_box">
+              <div class="survey_label">Q.あなたの生活スタイルは？</div>
+              <div class="survey_item">
+                <label for="timing">A.</label>
+                <input type="radio" name="timing" id="" value="朝型">朝型
+                <input type="radio" name="timing" id="" value="夜型">夜型
+              </div>
+            </div>
+            <div class="survey_personality survey_box">
+              <div class="survey_label">Q.あなたの性格は？</div>
+              <div class="survey_item">
+                <label for="personality">A.</label>
+                <input type="radio" name="personality" id="" value="内向型">内向型
+                <input type="radio" name="personality" id="" value="外向型">外向型
+              </div>
+            </div>
+            <div class="survey_sports survey_box">
+              <div class="survey_label">Q.あなたの好きなスポーツは？</div>
+              <div class="survey_item">
+                <label for="sports">A.</label>
+                <ul class="ks-cboxtags">
+                  <li><input type="checkbox" id="baseball" value="野球" name="chk2"><label for="baseball">野球</label></li>
+                  <li><input type="checkbox" id="soccer" value="サッカー" name="chk2"><label for="soccer">サッカー</label></li>
+                  <li><input type="checkbox" id="tennis" value="テニス" name="chk2"><label for="tennis">テニス</label></li>
+
+                  <li><input type="checkbox" id="snowboard" value="スノボ" name="chk2"><label for="snowboard">スノボ</label></li>
+                  <li><input type="checkbox" id="basketball" value="バスケ" name="chk2"><label for="basketball">バスケ</label></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="submit_btn">
+            <input type="submit" id="submit" class="submit" value="診断結果を見る">
+          </div>
+        </form>
+      </div>
+    </section>
+    <div class="modal">
+      <div class="modal_wrapper">
+        <div class="modal_content modal_loading">
+          <div class="modal_close"></div>
+          <div class="modal_result">
+            <p>あなたにおすすめのPOSSE部活は...</p>
+            <p class="modal_result_content"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </main>
+  <footer>
+    <div class="footer">
+        <div class="button_top">
+            <button class="go-top"><a href="/toppage.html">トップページに戻る</a>
+        </div>
+        </button>
+        <p class="copyright">&copy;Dairoku・D・Kousaku</p>
+    </div>
+
+</footer>
+</body>
+
+</html>

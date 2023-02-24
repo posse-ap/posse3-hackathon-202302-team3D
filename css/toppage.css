@@ -1,0 +1,464 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Kosugi Maru', sans-serif;
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+}
+
+/*ヘッダー適応のcss*/
+.logo {
+  margin-top: 24px;
+  margin-left: 24px;
+  margin-bottom: 40px;
+}
+
+.status-logo {
+  width: 40px;
+  background-color: #7BDCB5;
+}
+
+.status {
+  display: block;
+  width: 100%;
+  /* アイコンのスペースを確保したpadding-leftを設定する*/
+  padding: 0px 16px 0px 40px;
+  background-color: #fff;
+  /* 左から16pxの上下中央に背景画像を配置*/
+  background-position: left 16px center;
+  background-repeat: no-repeat;
+  background-size: 32px 32px;
+  /* 折り返しの対応*/
+  overflow-wrap: break-word;
+  background-image: url(/img/conditions_FILL0_wght400_GRAD0_opsz48.png);
+  border-radius: 20px;
+  box-shadow: 2px 2px 2px 2px #bbb;
+}
+
+span {
+  font-size: 32px;
+}
+
+.head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between
+}
+
+.header {
+  height: 240px;
+  display: flex;
+  justify-content: center;
+}
+
+header {
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  width: 100%;
+  box-sizing: border-box;
+  background-color: #fff;
+  position: sticky;
+  box-shadow: 2px 2px 2px 2px #bbb;
+}
+
+button {
+  display: flex;
+  text-align: center;
+  margin-right: 16px;
+}
+
+a p {
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+
+
+/* links */
+
+.links {
+  padding-top: 50px;
+  padding-bottom: 40px;
+  width: 100%;
+
+}
+
+.bottons {
+  /*  margin: 30px; */
+  text-align: center;
+  display: flex;
+  /* width: 80%;
+ */
+}
+
+@media screen and (max-width: 768px) {
+
+  .bottons,
+  .bottons a {
+    display: block;
+  }
+
+}
+
+
+.btn_text::before {
+  /* font-family: "material-symbols-outlined"; */
+  content: e5e1;
+}
+
+.btn_01 {
+  margin: 0px 30px 20px 30px;
+  background: #b3d4fc;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  /* line-height: 29px;*/
+  /* align-items: center; */
+  text-align: center;
+  color: #fff;
+  padding: 20px;
+  white-space: nowrap;
+  display: inline-block;
+  width: 30%;
+  border-radius: 50px;
+}
+
+.btn_01 span {
+  display: flex;
+  justify-content: center;
+}
+
+
+@media screen and (max-width: 768px) {
+  .btn_01 {
+    margin: 0px 30px 20px 30px;
+    background: #b6c9f3;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    /* line-height: 29px;*/
+    /* align-items: center; */
+    text-align: center;
+    padding: 20px;
+    white-space: nowrap;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    width: 80%;
+  }
+}
+
+
+/* recent photos */
+
+/*==================================================
+スライダーのためのcss
+===================================*/
+
+.recent {
+  width: 100%;
+}
+
+.slider {
+  /*横幅85%で左右に余白を持たせて中央寄せ*/
+  width: 85%;
+  margin: 0 auto;
+}
+
+.slider img {
+  /*   width: 100%;
+ */
+  /*スライダー内の画像を横幅100%に*/
+  /*   height: auto;
+ */
+  width: 400px;
+  height: 240px;
+  object-fit: cover;
+  /* padding: 0 10px 0 10px; */
+}
+
+/*slickのJSで書かれるタグ内、スライド左右の余白調整*/
+
+.slider .slick-slide {
+  margin: 20px 0px;
+}
+
+/* .slider .slide{
+  margin: 10px;
+} */
+
+/*矢印の設定*/
+
+/*戻る、次へ矢印の位置*/
+.slick-prev,
+.slick-next {
+  position: absolute;
+  /*絶対配置にする*/
+  top: 42%;
+  cursor: pointer;
+  /*マウスカーソルを指マークに*/
+  outline: none;
+  /*クリックをしたら出てくる枠線を消す*/
+  border-top: 2px solid #666;
+  /*矢印の色*/
+  border-right: 2px solid #666;
+  /*矢印の色*/
+  height: 15px;
+  width: 15px;
+}
+
+.slick-prev {
+  /*戻る矢印の位置と形状*/
+  left: -1.5%;
+  transform: rotate(-135deg);
+}
+
+.slick-next {
+  /*次へ矢印の位置と形状*/
+  right: -1.5%;
+  transform: rotate(45deg);
+}
+
+/*ドットナビゲーションの設定*/
+
+.slick-dots {
+  text-align: center;
+  margin: 20px 0 0 0;
+}
+
+.slick-dots li {
+  display: inline-block;
+  margin: 0 5px;
+}
+
+.slick-dots button {
+  color: transparent;
+  outline: none;
+  width: 8px;
+  /*ドットボタンのサイズ*/
+  height: 8px;
+  /*ドットボタンのサイズ*/
+  display: block;
+  border-radius: 50%;
+  background: #ccc;
+  /*ドットボタンの色*/
+}
+
+.slick-dots .slick-active button {
+  background: #333;
+  /*ドットボタンの現在地表示の色*/
+}
+
+
+
+/*========= レイアウトのためのCSS ===============*/
+
+body {
+  background: #FCFFE7;
+}
+
+h2,
+p {
+
+  text-align: center;
+  padding: 20px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+h2 span {
+  background-color: #FCFFE7;
+  padding: 20px;
+  border-radius: 20px;
+  color: #2B3467;
+  border: 4px solid #2B3467;
+  font-size: 40px;
+}
+
+@media screen and (max-width: 768px) {
+  h2 span, .btn_01 span{
+    font-size: 28px;
+  }
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  color: #333;
+  text-decoration: none;
+}
+
+a:hover,
+a:active {
+  text-decoration: none;
+}
+
+/* preview */
+.cp_box *,
+.cp_box *:before,
+.cp_box *:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.cp_box {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.cp_container {
+  display: flex;
+  width: 85%;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 768px) {
+
+  .cp_container {
+    display: block;
+
+  }
+}
+
+
+
+.club_photo {
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  background: bisque;
+}
+
+.club_intro {
+  margin-top: 80px;
+}
+
+.cp_container img {
+  width: 100%;
+  justify-content: center;
+  height: auto;
+}
+
+.intro_contents {
+  padding: 5%;
+  background-color: #ffffff;
+}
+
+.club_2 table {
+  border-spacing: 10px;
+}
+
+/* .club_1{
+  display: flex;
+}
+
+@media screen and (max-width: 768px) {
+  .club_1{
+    display: block;
+  }
+  } */
+.cp_box label {
+  position: absolute;
+  z-index: 1;
+  bottom: 0;
+  width: 100%;
+  height: 140px;
+  /* グラデーションの高さ */
+  cursor: pointer;
+  text-align: center;
+  /* 以下グラデーションは背景を自身のサイトに合わせて設定してください */
+  background: linear-gradient(to bottom, rgba(250, 252, 252, 0) 0%, rgba(250, 252, 252, 0.95) 90%);
+}
+
+.cp_box input:checked+label {
+  background: inherit;
+  /* 開いた時にグラデーションを消す */
+}
+
+.cp_box label:after {
+  line-height: 2.5rem;
+  position: absolute;
+  z-index: 2;
+  bottom: 20px;
+  left: 50%;
+  width: 16rem;
+  content: ' 続きをよむ';
+  transform: translate(-50%, 0);
+  letter-spacing: 0.05em;
+  color: #ffffff;
+  border-radius: 20px;
+  background-color: #b6c9f3;
+}
+
+.cp_box input {
+  display: none;
+}
+
+.cp_box .cp_container {
+  overflow: hidden;
+  height: 250px;
+  /* 開く前に見えている部分の高さ */
+  transition: all 0.5s;
+}
+
+/* .cp_box input:checked+label {
+  /* display: none ; 閉じるボタンを消す場合解放
+ } */
+
+.cp_box input:checked+label:after {
+  content: ' 閉じる';
+}
+
+.cp_box input:checked~.cp_container {
+  height: auto;
+  margin-bottom: 80px;
+  /* 閉じるボタンのbottomからの位置 */
+  transition: all 0.5s;
+}
+
+/*実質フッターcss*/
+.go-top {
+  float: right;
+  display: none;
+  /* display: flex; */
+  justify-content: center;
+  padding: 4px 24px;
+  border-radius: 20px;
+  background-color: #b6c9f3;
+  border: none;
+  color: white;
+  margin-top: 35px;
+  margin-right: 35px;
+  box-shadow: 1px 1px 1px 1px#bbb;
+}
+
+.go-top a {
+  color: white;
+}
+
+footer p {
+  font-weight: thin;
+  font-size: 16px;
+  margin-bottom: 16px;
+}
+
+.copyright {
+  display: inline;
+  display: flex;
+  justify-content: center;
+  margin-top: 70px;
+}
